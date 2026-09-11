@@ -3,6 +3,7 @@ import { siteConfig } from "@/content/site-config";
 import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
 
 import { Container } from "./Container";
+import { MobileNavigation } from "./MobileNavigation";
 import styles from "./Header.module.css";
 
 export function Header() {
@@ -34,16 +35,7 @@ export function Header() {
           </WhatsAppLink>
         </div>
 
-        <details className={styles.mobileMenu}>
-          <summary aria-label="Menu de navegação">
-            <span>Menu</span>
-            <span className={styles.menuIcon} aria-hidden="true" />
-          </summary>
-          <div className={styles.mobilePanel}>
-            <nav aria-label="Navegação móvel">{navigation}</nav>
-            <WhatsAppLink>Conversar pelo WhatsApp</WhatsAppLink>
-          </div>
-        </details>
+        <MobileNavigation />
       </Container>
     </header>
   );

@@ -7,7 +7,7 @@ export const siteConfig = {
   audience: "Adultos",
   modalities: ["Online", "Presencial"] as const,
   approach: "Terapia Cognitivo-Comportamental",
-  siteUrl: null as string | null,
+  siteUrl: "https://psicologa-mariana-teste.vercel.app" as string | null,
   whatsappNumber: "5511999999999" as string | null,
   whatsappMessage:
     "Olá, Dra. Mariana. Encontrei seu site e gostaria de saber mais sobre o atendimento psicológico.",
