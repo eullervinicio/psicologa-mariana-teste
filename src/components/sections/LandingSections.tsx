@@ -4,7 +4,6 @@ import { Container } from "@/components/layout/Container";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
-import heroImage from "@/assets/images/mariana-hero.webp";
 import aboutImage from "@/assets/images/mariana-sobre.webp";
 import {
   aboutContent,
@@ -35,6 +34,14 @@ function Arrow() {
 export function HeroSection() {
   return (
     <section id="inicio" className={styles.hero} aria-labelledby="hero-title">
+      <Image
+        className={styles.heroImage}
+        src="/images/mariana-hero.jpg"
+        alt=""
+        fill
+        sizes="100vw"
+        preload
+      />
       <Container className={styles.heroGrid}>
         <div className={styles.heroContent}>
           <SectionHeading
@@ -57,25 +64,11 @@ export function HeroSection() {
             <li>Online e presencial</li>
             <li>{siteConfig.city} — {siteConfig.state}</li>
           </ul>
-        </div>
-
-        <figure className={styles.heroEditorial}>
-          <Image
-            className={styles.heroImage}
-            src={heroImage}
-            alt="Retrato profissional da psicóloga Mariana Alves."
-            fill
-            sizes="(max-width: 375px) calc(100vw - 32px), (max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 560px, (max-width: 1279px) 35vw, 458px"
-            preload
-            placeholder="blur"
-          />
-          <span className={styles.heroNumber}>01</span>
-          <figcaption className={styles.heroIdentity}>
-            <span>Psicoterapia para adultos</span>
+          <div className={styles.heroIdentity}>
             <strong>{siteConfig.name}</strong>
             <p>{siteConfig.profession} · {siteConfig.registration}</p>
-          </figcaption>
-        </figure>
+          </div>
+        </div>
       </Container>
     </section>
   );

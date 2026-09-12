@@ -1,11 +1,12 @@
 .header {
-  position: sticky;
+  position: absolute;
   z-index: 20;
   top: 0;
+  right: 0;
+  left: 0;
   min-height: 4.5rem;
-  border-bottom: 1px solid var(--color-border-soft);
-  background: rgb(252 251 248 / 94%);
-  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgb(255 255 255 / 14%);
+  background: transparent;
 }
 
 .inner {
@@ -21,7 +22,7 @@
   width: fit-content;
   min-height: 2.75rem;
   align-content: center;
-  color: var(--color-primary-900);
+  color: var(--color-text-inverse);
   font-family: var(--font-display), Georgia, "Times New Roman", serif;
   font-size: 1.25rem;
   font-weight: 500;
@@ -30,7 +31,7 @@
 }
 
 .identity small {
-  color: var(--color-text-secondary);
+  color: var(--color-text-inverse-soft);
   font-family: var(--font-interface), Arial, Helvetica, sans-serif;
   font-size: 0.75rem;
   font-weight: 500;
@@ -52,14 +53,37 @@
   align-items: center;
   justify-content: center;
   padding-inline: var(--space-1);
-  color: var(--color-text-secondary);
+  color: var(--color-text-inverse-soft);
   font-size: 0.9375rem;
   font-weight: 500;
   text-decoration: none;
 }
 
 .navigation a:hover {
-  color: var(--color-primary-900);
+  color: var(--color-text-inverse);
+  text-decoration: underline;
+  text-decoration-color: var(--color-secondary-300);
+  text-underline-offset: 0.4em;
+}
+
+.identity:focus-visible,
+.navigation a:focus-visible,
+.action a:focus-visible,
+.mobileMenu summary:focus-visible {
+  outline-color: var(--color-text-inverse);
+  box-shadow: 0 0 0 4px rgb(221 175 159 / 48%);
+}
+
+.action a {
+  border-color: rgb(255 255 255 / 38%);
+  color: var(--color-text-inverse);
+  background: rgb(14 44 46 / 12%);
+}
+
+.action a:hover {
+  border-color: rgb(255 255 255 / 58%);
+  color: var(--color-text-inverse);
+  background: rgb(255 255 255 / 10%);
 }
 
 .action:empty {
@@ -90,7 +114,7 @@
     min-height: 2.75rem;
     align-items: center;
     gap: var(--space-3);
-    color: var(--color-primary-900);
+    color: var(--color-text-inverse);
     cursor: pointer;
     font-size: 0.8125rem;
     font-weight: 600;
@@ -116,9 +140,10 @@
     left: 0;
     display: grid;
     padding: var(--space-5) var(--page-gutter) var(--space-6);
-    border-top: 1px solid var(--color-border-soft);
-    border-bottom: 1px solid var(--color-border-soft);
-    background: var(--color-background-base);
+    border-top: 1px solid rgb(255 255 255 / 16%);
+    border-bottom: 1px solid rgb(255 255 255 / 16%);
+    background: rgb(14 35 35 / 97%);
+    backdrop-filter: blur(14px);
     box-shadow: var(--shadow-soft);
     gap: var(--space-5);
   }
@@ -129,19 +154,23 @@
   }
 
   .mobilePanel li {
-    border-bottom: 1px solid var(--color-border-soft);
+    border-bottom: 1px solid rgb(255 255 255 / 14%);
   }
 
   .mobilePanel li:first-child {
-    border-top: 1px solid var(--color-border-soft);
+    border-top: 1px solid rgb(255 255 255 / 14%);
   }
 
   .mobilePanel nav a {
     display: block;
     min-height: 2.75rem;
     padding-block: var(--space-3);
-    color: var(--color-primary-900);
+    color: var(--color-text-inverse-soft);
     text-decoration: none;
+  }
+
+  .mobilePanel nav a:hover {
+    color: var(--color-text-inverse);
   }
 }
 
