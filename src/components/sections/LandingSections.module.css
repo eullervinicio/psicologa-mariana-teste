@@ -106,9 +106,15 @@
   content: "";
 }
 
-.heroImage {
+.heroPicture {
   position: absolute;
   z-index: 0;
+  inset: 0;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: 50% center;
 }

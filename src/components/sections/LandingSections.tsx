@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { getImageProps } from "next/image";
 
 import { Container } from "@/components/layout/Container";
 import { ContactForm } from "@/components/contact/ContactForm";
@@ -18,6 +18,27 @@ import { siteConfig } from "@/content/site-config";
 
 import styles from "./LandingSections.module.css";
 
+const {
+  props: { srcSet: mobileHeroSrcSet },
+} = getImageProps({
+  src: "/images/mariana-hero-mobile.jpg",
+  alt: "",
+  width: 941,
+  height: 1672,
+  sizes: "100vw",
+  quality: 75,
+});
+
+const { props: desktopHeroImageProps } = getImageProps({
+  src: "/images/mariana-hero.jpg",
+  alt: "",
+  width: 1672,
+  height: 941,
+  sizes: "100vw",
+  quality: 75,
+  fetchPriority: "high",
+});
+
 function Arrow() {
   return (
     <svg
@@ -34,14 +55,10 @@ function Arrow() {
 export function HeroSection() {
   return (
     <section id="inicio" className={styles.hero} aria-labelledby="hero-title">
-      <Image
-        className={styles.heroImage}
-        src="/images/mariana-hero.jpg"
-        alt=""
-        fill
-        sizes="100vw"
-        preload
-      />
+      <picture className={styles.heroPicture}>
+        <source media="(max-width: 600px)" srcSet={mobileHeroSrcSet} />
+        <img {...desktopHeroImageProps} className={styles.heroImage} />
+      </picture>
       <Container className={styles.heroGrid}>
         <div className={styles.heroContent}>
           <SectionHeading
