@@ -16,12 +16,7 @@ export function ButtonLink({
   disabled = false,
   ...props
 }: ButtonLinkProps) {
-  const classes = [
-    styles.button,
-    styles[variant],
-    disabled ? styles.disabled : "",
-    className,
-  ]
+  const classes = [styles.button, styles[variant], disabled ? styles.disabled : "", className]
     .filter(Boolean)
     .join(" ");
 

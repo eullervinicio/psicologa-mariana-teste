@@ -41,12 +41,7 @@ const { props: desktopHeroImageProps } = getImageProps({
 
 function Arrow() {
   return (
-    <svg
-      aria-hidden="true"
-      className={styles.arrow}
-      viewBox="0 0 20 20"
-      fill="none"
-    >
+    <svg aria-hidden="true" className={styles.arrow} viewBox="0 0 20 20" fill="none">
       <path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" strokeWidth="1.6" />
     </svg>
   );
@@ -57,7 +52,7 @@ export function HeroSection() {
     <section id="inicio" className={styles.hero} aria-labelledby="hero-title">
       <picture className={styles.heroPicture}>
         <source media="(max-width: 600px)" srcSet={mobileHeroSrcSet} />
-        <img {...desktopHeroImageProps} className={styles.heroImage} />
+        <img {...desktopHeroImageProps} alt="" className={styles.heroImage} />
       </picture>
       <Container className={styles.heroGrid}>
         <div className={styles.heroContent}>
@@ -79,11 +74,15 @@ export function HeroSection() {
 
           <ul className={styles.heroFacts} aria-label="Informações do atendimento">
             <li>Online e presencial</li>
-            <li>{siteConfig.city} — {siteConfig.state}</li>
+            <li>
+              {siteConfig.city} — {siteConfig.state}
+            </li>
           </ul>
           <div className={styles.heroIdentity}>
             <strong>{siteConfig.name}</strong>
-            <p>{siteConfig.profession} · {siteConfig.registration}</p>
+            <p>
+              {siteConfig.profession} · {siteConfig.registration}
+            </p>
           </div>
         </div>
       </Container>
@@ -147,7 +146,9 @@ export function AboutSection() {
           </div>
           <div className={styles.signature}>
             <strong>{siteConfig.name}</strong>
-            <span>{siteConfig.profession} · {siteConfig.registration}</span>
+            <span>
+              {siteConfig.profession} · {siteConfig.registration}
+            </span>
           </div>
         </div>
       </Container>

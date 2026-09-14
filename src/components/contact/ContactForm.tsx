@@ -109,17 +109,13 @@ export function ContactForm() {
       <form className={styles.form} onSubmit={handleSubmit} noValidate>
         <div className={styles.honeypot} aria-hidden="true">
           <label htmlFor="website">Não preencha este campo</label>
-          <input
-            id="website"
-            name="website"
-            type="text"
-            tabIndex={-1}
-            autoComplete="off"
-          />
+          <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
         </div>
 
         <div className={styles.fieldFull}>
-          <label htmlFor="contact-name">Nome <span aria-hidden="true">*</span></label>
+          <label htmlFor="contact-name">
+            Nome <span aria-hidden="true">*</span>
+          </label>
           <input
             id="contact-name"
             name="name"
@@ -133,12 +129,18 @@ export function ContactForm() {
             aria-describedby={errors.name ? "name-error" : undefined}
             onInput={() => clearError("name")}
           />
-          {errors.name ? <p id="name-error" className={styles.error}>{errors.name}</p> : null}
+          {errors.name ? (
+            <p id="name-error" className={styles.error}>
+              {errors.name}
+            </p>
+          ) : null}
         </div>
 
         <fieldset className={styles.contactFields}>
           <legend>Contato para retorno</legend>
-          <p id="contact-hint" className={styles.hint}>{formContent.contactHint}</p>
+          <p id="contact-hint" className={styles.hint}>
+            {formContent.contactHint}
+          </p>
 
           <div className={styles.field}>
             <label htmlFor="contact-whatsapp">WhatsApp</label>
@@ -154,7 +156,11 @@ export function ContactForm() {
               aria-describedby={errors.whatsapp ? "contact-hint whatsapp-error" : "contact-hint"}
               onInput={() => clearContactErrors("whatsapp")}
             />
-            {errors.whatsapp ? <p id="whatsapp-error" className={styles.error}>{errors.whatsapp}</p> : null}
+            {errors.whatsapp ? (
+              <p id="whatsapp-error" className={styles.error}>
+                {errors.whatsapp}
+              </p>
+            ) : null}
           </div>
 
           <div className={styles.field}>
@@ -171,12 +177,18 @@ export function ContactForm() {
               aria-describedby={errors.email ? "contact-hint email-error" : "contact-hint"}
               onInput={() => clearContactErrors("email")}
             />
-            {errors.email ? <p id="email-error" className={styles.error}>{errors.email}</p> : null}
+            {errors.email ? (
+              <p id="email-error" className={styles.error}>
+                {errors.email}
+              </p>
+            ) : null}
           </div>
         </fieldset>
 
         <div className={styles.fieldFull}>
-          <label htmlFor="contact-message">Mensagem <span aria-hidden="true">*</span></label>
+          <label htmlFor="contact-message">
+            Mensagem <span aria-hidden="true">*</span>
+          </label>
           <textarea
             id="contact-message"
             name="message"
@@ -188,17 +200,27 @@ export function ContactForm() {
             aria-describedby={errors.message ? "message-hint message-error" : "message-hint"}
             onInput={() => clearError("message")}
           />
-          <p id="message-hint" className={styles.hint}>{formContent.messageHint}</p>
-          {errors.message ? <p id="message-error" className={styles.error}>{errors.message}</p> : null}
+          <p id="message-hint" className={styles.hint}>
+            {formContent.messageHint}
+          </p>
+          {errors.message ? (
+            <p id="message-error" className={styles.error}>
+              {errors.message}
+            </p>
+          ) : null}
         </div>
 
         <div className={styles.actions}>
           <button type="submit">Enviar mensagem</button>
-          <p><span aria-hidden="true">*</span> Campos obrigatórios</p>
+          <p>
+            <span aria-hidden="true">*</span> Campos obrigatórios
+          </p>
         </div>
 
         {status ? (
-          <p className={styles.status} role="status" aria-live="polite">{status}</p>
+          <p className={styles.status} role="status" aria-live="polite">
+            {status}
+          </p>
         ) : null}
       </form>
     </div>

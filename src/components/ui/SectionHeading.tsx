@@ -24,9 +24,7 @@ export function SectionHeading({
     <div className={classes} {...props}>
       {eyebrow ? <p className={styles.eyebrow}>{eyebrow}</p> : null}
       <HeadingTag className={styles.title}>{title}</HeadingTag>
-      {description ? (
-        <p className={styles.description}>{description}</p>
-      ) : null}
+      {description ? <p className={styles.description}>{description}</p> : null}
     </div>
   );
 }

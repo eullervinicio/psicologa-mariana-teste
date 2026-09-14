@@ -24,17 +24,17 @@ Não haverá seções isoladas para “Áreas de atuação”, “Modalidades”
 
 ## 2. Mapa geral da página
 
-| Ordem | Bloco | Pergunta respondida | Função principal | CTA |
-|---:|---|---|---|---|
-| 1 | Cabeçalho | “Onde estou e como encontro o que preciso?” | Orientar e facilitar acesso ao contato | Conversar pelo WhatsApp |
-| 2 | Apresentação principal | “Este atendimento é para mim?” | Posicionar, gerar reconhecimento inicial e abrir uma rota direta | Conversar pelo WhatsApp |
-| 3 | Identificação com o visitante | “Em quais situações a terapia pode ajudar?” | Produzir identificação sem diagnosticar | Sem CTA principal |
-| 4 | Sobre a psicóloga | “Quem é a profissional e por que posso confiar?” | Humanizar e comprovar credibilidade | Conhecer como funciona |
-| 5 | Abordagem terapêutica | “Como será conduzido o acompanhamento?” | Explicar a TCC e alinhar expectativas | Sem CTA principal |
-| 6 | Como funciona o atendimento | “Quais são os formatos e os próximos passos?” | Remover objeções práticas e preparar o contato | Solicitar agendamento |
-| 7 | Perguntas frequentes | “O que ainda preciso saber antes de conversar?” | Resolver dúvidas finais | Tirar uma dúvida pelo WhatsApp |
-| 8 | Contato final | “Como começo?” | Converter com baixo atrito e explicar o que acontece depois | Conversar pelo WhatsApp |
-| 9 | Rodapé | “As informações profissionais estão claras?” | Reforçar legitimidade e oferecer referências institucionais | Link de contato secundário |
+| Ordem | Bloco                         | Pergunta respondida                              | Função principal                                                 | CTA                            |
+| ----: | ----------------------------- | ------------------------------------------------ | ---------------------------------------------------------------- | ------------------------------ |
+|     1 | Cabeçalho                     | “Onde estou e como encontro o que preciso?”      | Orientar e facilitar acesso ao contato                           | Conversar pelo WhatsApp        |
+|     2 | Apresentação principal        | “Este atendimento é para mim?”                   | Posicionar, gerar reconhecimento inicial e abrir uma rota direta | Conversar pelo WhatsApp        |
+|     3 | Identificação com o visitante | “Em quais situações a terapia pode ajudar?”      | Produzir identificação sem diagnosticar                          | Sem CTA principal              |
+|     4 | Sobre a psicóloga             | “Quem é a profissional e por que posso confiar?” | Humanizar e comprovar credibilidade                              | Conhecer como funciona         |
+|     5 | Abordagem terapêutica         | “Como será conduzido o acompanhamento?”          | Explicar a TCC e alinhar expectativas                            | Sem CTA principal              |
+|     6 | Como funciona o atendimento   | “Quais são os formatos e os próximos passos?”    | Remover objeções práticas e preparar o contato                   | Solicitar agendamento          |
+|     7 | Perguntas frequentes          | “O que ainda preciso saber antes de conversar?”  | Resolver dúvidas finais                                          | Tirar uma dúvida pelo WhatsApp |
+|     8 | Contato final                 | “Como começo?”                                   | Converter com baixo atrito e explicar o que acontece depois      | Conversar pelo WhatsApp        |
+|     9 | Rodapé                        | “As informações profissionais estão claras?”     | Reforçar legitimidade e oferecer referências institucionais      | Link de contato secundário     |
 
 ## 3. Cabeçalho
 
@@ -470,18 +470,18 @@ Um link textual para **WhatsApp** é suficiente. O rodapé não precisa repetir 
 
 Não haverá uma seção isolada chamada “Por que confiar” ou “Elementos de confiança”. Credibilidade deve ser demonstrada ao longo da experiência:
 
-| Elemento | Local ideal |
-|---|---|
-| Nome, profissão e CRP | Apresentação principal, Sobre e Rodapé |
-| Fotografia profissional | Apresentação principal ou Sobre |
-| Formação e especializações | Sobre |
-| Abordagem terapêutica | Sobre e Abordagem |
-| Postura profissional | Sobre e tom de toda a página |
-| Modalidades e localização | Apresentação principal, Atendimento e Rodapé |
-| Processo do primeiro contato | Atendimento e Contato final |
-| Informações práticas | Atendimento e FAQ |
-| Privacidade e informações legais | Rodapé |
-| Qualidade visual, legibilidade e estabilidade | Página inteira |
+| Elemento                                      | Local ideal                                  |
+| --------------------------------------------- | -------------------------------------------- |
+| Nome, profissão e CRP                         | Apresentação principal, Sobre e Rodapé       |
+| Fotografia profissional                       | Apresentação principal ou Sobre              |
+| Formação e especializações                    | Sobre                                        |
+| Abordagem terapêutica                         | Sobre e Abordagem                            |
+| Postura profissional                          | Sobre e tom de toda a página                 |
+| Modalidades e localização                     | Apresentação principal, Atendimento e Rodapé |
+| Processo do primeiro contato                  | Atendimento e Contato final                  |
+| Informações práticas                          | Atendimento e FAQ                            |
+| Privacidade e informações legais              | Rodapé                                       |
+| Qualidade visual, legibilidade e estabilidade | Página inteira                               |
 
 Essa distribuição evita uma seção autoelogiosa e permite que a confiança resulte de evidências concretas.
 

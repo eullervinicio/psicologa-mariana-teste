@@ -3,10 +3,7 @@ type WhatsAppLinkInput = {
   readonly message: string;
 };
 
-export function createWhatsAppUrl({
-  number,
-  message,
-}: WhatsAppLinkInput): string | null {
+export function createWhatsAppUrl({ number, message }: WhatsAppLinkInput): string | null {
   if (!number) {
     return null;
   }

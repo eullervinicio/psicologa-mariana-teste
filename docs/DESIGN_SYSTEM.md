@@ -23,16 +23,16 @@ O resultado deve transmitir cuidado e competência sem parecer clínico, informa
 
 A paleta principal usa azul-petróleo para comunicar confiança, estabilidade e profundidade sem recorrer ao azul hospitalar tradicional.
 
-| Token | Cor | Uso recomendado |
-|---|---|---|
-| Petróleo 950 | `#0E2C2E` | Rodapé, fundos escuros especiais |
+| Token        | Cor       | Uso recomendado                                    |
+| ------------ | --------- | -------------------------------------------------- |
+| Petróleo 950 | `#0E2C2E` | Rodapé, fundos escuros especiais                   |
 | Petróleo 900 | `#173F43` | Marca, títulos sobre fundos claros, seções escuras |
-| Petróleo 800 | `#23565A` | Hover de elementos primários, ícones de destaque |
-| Petróleo 700 | `#316B6E` | Elementos informativos e detalhes controlados |
+| Petróleo 800 | `#23565A` | Hover de elementos primários, ícones de destaque   |
+| Petróleo 700 | `#316B6E` | Elementos informativos e detalhes controlados      |
 | Petróleo 500 | `#679597` | Ilustrações abstratas mínimas, divisores especiais |
-| Petróleo 200 | `#C4DAD7` | Fundos sutis, estados selecionados suaves |
-| Petróleo 100 | `#E1ECEA` | Cards tonais e áreas de apoio |
-| Petróleo 50 | `#F2F6F5` | Fundo alternativo de seção |
+| Petróleo 200 | `#C4DAD7` | Fundos sutis, estados selecionados suaves          |
+| Petróleo 100 | `#E1ECEA` | Cards tonais e áreas de apoio                      |
+| Petróleo 50  | `#F2F6F5` | Fundo alternativo de seção                         |
 
 ### Regras de uso
 
@@ -45,24 +45,24 @@ A paleta principal usa azul-petróleo para comunicar confiança, estabilidade e 
 
 O terracota queimado adiciona proximidade e calor. Ele diferencia as ações de contato da identidade institucional sem adquirir aparência promocional.
 
-| Token | Cor | Uso recomendado |
-|---|---|---|
-| Terracota 800 | `#873C2D` | Hover e active de CTA |
-| Terracota 700 | `#A4513E` | CTA principal e links de alta intenção |
-| Terracota 600 | `#B8644F` | Pequenos acentos gráficos |
-| Terracota 300 | `#DDAF9F` | Detalhes discretos e indicadores decorativos |
-| Terracota 100 | `#F3DED7` | Fundo de destaque suave |
-| Terracota 50 | `#FBF3F0` | Fundo muito leve para contato ou aviso não crítico |
+| Token         | Cor       | Uso recomendado                                    |
+| ------------- | --------- | -------------------------------------------------- |
+| Terracota 800 | `#873C2D` | Hover e active de CTA                              |
+| Terracota 700 | `#A4513E` | CTA principal e links de alta intenção             |
+| Terracota 600 | `#B8644F` | Pequenos acentos gráficos                          |
+| Terracota 300 | `#DDAF9F` | Detalhes discretos e indicadores decorativos       |
+| Terracota 100 | `#F3DED7` | Fundo de destaque suave                            |
+| Terracota 50  | `#FBF3F0` | Fundo muito leve para contato ou aviso não crítico |
 
 ### Cor auxiliar mineral
 
 Uma pequena família mineral pode apoiar informações neutras. Ela não constitui uma terceira cor de marca.
 
-| Token | Cor | Uso recomendado |
-|---|---|---|
-| Mineral 300 | `#C9C0B4` | Detalhes editoriais raros |
+| Token       | Cor       | Uso recomendado                               |
+| ----------- | --------- | --------------------------------------------- |
+| Mineral 300 | `#C9C0B4` | Detalhes editoriais raros                     |
 | Mineral 100 | `#ECE7DF` | Separadores quentes e superfícies secundárias |
-| Mineral 50 | `#F7F4EF` | Alternância sutil de fundo |
+| Mineral 50  | `#F7F4EF` | Alternância sutil de fundo                    |
 
 ### Regras de uso
 
@@ -72,14 +72,14 @@ Uma pequena família mineral pode apoiar informações neutras. Ela não constit
 
 ## 4. Cores de fundo
 
-| Token | Cor | Aplicação |
-|---|---|---|
-| Fundo base | `#FCFBF8` | Corpo principal da página |
-| Fundo branco | `#FFFFFF` | Cards, FAQ e superfícies elevadas |
-| Fundo frio | `#F2F6F5` | Alternância de seções e abordagem |
-| Fundo quente | `#F7F4EF` | Sobre a psicóloga ou blocos editoriais |
-| Fundo terracota suave | `#FBF3F0` | Contato final, se usado com moderação |
-| Fundo escuro | `#173F43` | Rodapé ou seção final escura |
+| Token                 | Cor       | Aplicação                              |
+| --------------------- | --------- | -------------------------------------- |
+| Fundo base            | `#FCFBF8` | Corpo principal da página              |
+| Fundo branco          | `#FFFFFF` | Cards, FAQ e superfícies elevadas      |
+| Fundo frio            | `#F2F6F5` | Alternância de seções e abordagem      |
+| Fundo quente          | `#F7F4EF` | Sobre a psicóloga ou blocos editoriais |
+| Fundo terracota suave | `#FBF3F0` | Contato final, se usado com moderação  |
+| Fundo escuro          | `#173F43` | Rodapé ou seção final escura           |
 
 ### Alternância de seções
 
@@ -91,28 +91,28 @@ Uma pequena família mineral pode apoiar informações neutras. Ela não constit
 
 ## 5. Cores de texto
 
-| Token | Cor | Aplicação |
-|---|---|---|
-| Texto principal | `#173033` | Corpo de texto e informações essenciais |
-| Título institucional | `#173F43` | Títulos e marca sobre fundo claro |
-| Texto secundário | `#536568` | Textos auxiliares e descrições |
-| Texto discreto | `#6B7879` | Metadados não essenciais, somente em tamanho adequado |
-| Texto inverso | `#FFFFFF` | Texto sobre petróleo 900 ou CTA |
-| Texto inverso suave | `#DDE9E7` | Informações secundárias sobre fundo escuro |
-| Link | `#23565A` | Links em texto corrido |
-| Link hover | `#173F43` | Hover de links |
-| Erro | `#9C3D35` | Mensagens de erro e validação |
-| Sucesso | `#27624E` | Confirmações de envio |
+| Token                | Cor       | Aplicação                                             |
+| -------------------- | --------- | ----------------------------------------------------- |
+| Texto principal      | `#173033` | Corpo de texto e informações essenciais               |
+| Título institucional | `#173F43` | Títulos e marca sobre fundo claro                     |
+| Texto secundário     | `#536568` | Textos auxiliares e descrições                        |
+| Texto discreto       | `#6B7879` | Metadados não essenciais, somente em tamanho adequado |
+| Texto inverso        | `#FFFFFF` | Texto sobre petróleo 900 ou CTA                       |
+| Texto inverso suave  | `#DDE9E7` | Informações secundárias sobre fundo escuro            |
+| Link                 | `#23565A` | Links em texto corrido                                |
+| Link hover           | `#173F43` | Hover de links                                        |
+| Erro                 | `#9C3D35` | Mensagens de erro e validação                         |
+| Sucesso              | `#27624E` | Confirmações de envio                                 |
 
 ### Contrastes de referência
 
-| Combinação | Contraste aproximado |
-|---|---:|
-| Texto principal sobre fundo base | 13,47:1 |
-| Texto secundário sobre fundo base | 5,92:1 |
-| Petróleo 900 sobre branco | 11,48:1 |
-| CTA terracota 700 com texto branco | 5,49:1 |
-| CTA terracota 800 com texto branco | 7,74:1 |
+| Combinação                         | Contraste aproximado |
+| ---------------------------------- | -------------------: |
+| Texto principal sobre fundo base   |              13,47:1 |
+| Texto secundário sobre fundo base  |               5,92:1 |
+| Petróleo 900 sobre branco          |              11,48:1 |
+| CTA terracota 700 com texto branco |               5,49:1 |
+| CTA terracota 800 com texto branco |               7,74:1 |
 
 Textos essenciais nunca devem usar opacidade como único recurso para parecer secundários. Preferir uma cor sólida prevista no sistema.
 
@@ -147,13 +147,13 @@ Em um mesmo campo visual, deve existir somente um CTA preenchido. Ações secund
 
 ## 7. Cores de bordas e divisores
 
-| Token | Cor | Aplicação |
-|---|---|---|
-| Borda suave | `#DCE4E2` | Cards e FAQ |
-| Borda padrão | `#C9D6D3` | Campos e componentes interativos |
-| Borda forte | `#91AAA7` | Hover ou elementos que exigem maior definição |
-| Divisor quente | `#E4DED5` | Separadores sobre fundos quentes |
-| Borda de erro | `#B64C43` | Campos inválidos |
+| Token          | Cor       | Aplicação                                     |
+| -------------- | --------- | --------------------------------------------- |
+| Borda suave    | `#DCE4E2` | Cards e FAQ                                   |
+| Borda padrão   | `#C9D6D3` | Campos e componentes interativos              |
+| Borda forte    | `#91AAA7` | Hover ou elementos que exigem maior definição |
+| Divisor quente | `#E4DED5` | Separadores sobre fundos quentes              |
+| Borda de erro  | `#B64C43` | Campos inválidos                              |
 
 ### Regras
 
@@ -216,19 +216,19 @@ Fallback: Arial, Helvetica, sans-serif.
 
 ## 9. Hierarquia tipográfica
 
-| Nível | Família | Desktop | Tablet | Mobile | Peso | Entrelinha |
-|---|---|---:|---:|---:|---:|---:|
-| Display / H1 | Newsreader | 64 px | 52 px | 40 px | 400 | 1,05–1,10 |
-| H2 | Newsreader | 46 px | 40 px | 34 px | 400 | 1,12 |
-| H3 | Newsreader | 32 px | 29 px | 26 px | 500 | 1,18 |
-| H4 / título de card | Inter | 20 px | 20 px | 19 px | 600 | 1,35 |
-| Subtítulo hero | Inter | 20 px | 19 px | 18 px | 400 | 1,55 |
-| Corpo destacado | Inter | 18 px | 18 px | 17 px | 400 | 1,65 |
-| Corpo padrão | Inter | 16 px | 16 px | 16 px | 400 | 1,65 |
-| Navegação | Inter | 15 px | 15 px | 16 px | 500 | 1,4 |
-| Botão | Inter | 16 px | 16 px | 16 px | 600 | 1,2 |
-| Rótulo | Inter | 14 px | 14 px | 14 px | 600 | 1,4 |
-| Metadado | Inter | 13 px | 13 px | 13 px | 500 | 1,45 |
+| Nível               | Família    | Desktop | Tablet | Mobile | Peso | Entrelinha |
+| ------------------- | ---------- | ------: | -----: | -----: | ---: | ---------: |
+| Display / H1        | Newsreader |   64 px |  52 px |  40 px |  400 |  1,05–1,10 |
+| H2                  | Newsreader |   46 px |  40 px |  34 px |  400 |       1,12 |
+| H3                  | Newsreader |   32 px |  29 px |  26 px |  500 |       1,18 |
+| H4 / título de card | Inter      |   20 px |  20 px |  19 px |  600 |       1,35 |
+| Subtítulo hero      | Inter      |   20 px |  19 px |  18 px |  400 |       1,55 |
+| Corpo destacado     | Inter      |   18 px |  18 px |  17 px |  400 |       1,65 |
+| Corpo padrão        | Inter      |   16 px |  16 px |  16 px |  400 |       1,65 |
+| Navegação           | Inter      |   15 px |  15 px |  16 px |  500 |        1,4 |
+| Botão               | Inter      |   16 px |  16 px |  16 px |  600 |        1,2 |
+| Rótulo              | Inter      |   14 px |  14 px |  14 px |  600 |        1,4 |
+| Metadado            | Inter      |   13 px |  13 px |  13 px |  500 |       1,45 |
 
 ### Escala fluida
 
@@ -246,20 +246,20 @@ H1 e H2 podem variar suavemente entre os valores mobile e desktop. Textos de cor
 
 Base: múltiplos de 4 px com ritmo principal de 8 px.
 
-| Token | Valor | Uso típico |
-|---|---:|---|
-| Espaço 1 | 4 px | Ajustes mínimos e agrupamento de ícone |
-| Espaço 2 | 8 px | Rótulo e texto auxiliar |
-| Espaço 3 | 12 px | Conteúdo compacto |
-| Espaço 4 | 16 px | Espaço interno mínimo e grupos de texto |
-| Espaço 5 | 24 px | Entre elementos relacionados |
-| Espaço 6 | 32 px | Cards e blocos internos |
-| Espaço 7 | 40 px | Grupos de conteúdo maiores |
-| Espaço 8 | 48 px | Subdivisões de seção |
-| Espaço 9 | 64 px | Seções compactas no mobile |
-| Espaço 10 | 80 px | Seções em tablet |
-| Espaço 11 | 96 px | Seções padrão no desktop |
-| Espaço 12 | 128 px | Seções editoriais amplas no desktop |
+| Token     |  Valor | Uso típico                              |
+| --------- | -----: | --------------------------------------- |
+| Espaço 1  |   4 px | Ajustes mínimos e agrupamento de ícone  |
+| Espaço 2  |   8 px | Rótulo e texto auxiliar                 |
+| Espaço 3  |  12 px | Conteúdo compacto                       |
+| Espaço 4  |  16 px | Espaço interno mínimo e grupos de texto |
+| Espaço 5  |  24 px | Entre elementos relacionados            |
+| Espaço 6  |  32 px | Cards e blocos internos                 |
+| Espaço 7  |  40 px | Grupos de conteúdo maiores              |
+| Espaço 8  |  48 px | Subdivisões de seção                    |
+| Espaço 9  |  64 px | Seções compactas no mobile              |
+| Espaço 10 |  80 px | Seções em tablet                        |
+| Espaço 11 |  96 px | Seções padrão no desktop                |
+| Espaço 12 | 128 px | Seções editoriais amplas no desktop     |
 
 ### Ritmo de seção
 
@@ -278,14 +278,14 @@ Base: múltiplos de 4 px com ritmo principal de 8 px.
 
 ## 11. Larguras máximas
 
-| Contexto | Largura máxima |
-|---|---:|
-| Container amplo | 1.280 px |
-| Container principal | 1.200 px |
-| Conteúdo editorial | 720 px |
-| Texto do hero | 620 px |
-| FAQ | 840 px |
-| Formulário opcional | 640 px |
+| Contexto            | Largura máxima |
+| ------------------- | -------------: |
+| Container amplo     |       1.280 px |
+| Container principal |       1.200 px |
+| Conteúdo editorial  |         720 px |
+| Texto do hero       |         620 px |
+| FAQ                 |         840 px |
+| Formulário opcional |         640 px |
 
 ### Margens laterais
 
@@ -332,13 +332,13 @@ O conteúdo não deve ocupar toda a largura em monitores grandes. O espaço vazi
 
 ## 13. Border radius
 
-| Token | Valor | Aplicação |
-|---|---:|---|
-| Pequeno | 8 px | Campos, tags e controles compactos |
-| Médio | 14 px | Botões e FAQ |
-| Grande | 20 px | Cards principais |
-| Extra grande | 28 px | Fotografias e blocos de destaque |
-| Circular | 999 px | Avatares, badges e botões realmente circulares |
+| Token        |  Valor | Aplicação                                      |
+| ------------ | -----: | ---------------------------------------------- |
+| Pequeno      |   8 px | Campos, tags e controles compactos             |
+| Médio        |  14 px | Botões e FAQ                                   |
+| Grande       |  20 px | Cards principais                               |
+| Extra grande |  28 px | Fotografias e blocos de destaque               |
+| Circular     | 999 px | Avatares, badges e botões realmente circulares |
 
 ### Regras
 
@@ -351,11 +351,11 @@ O conteúdo não deve ocupar toda a largura em monitores grandes. O espaço vazi
 
 Sombras serão raras e quase imperceptíveis. A separação principal virá de fundo, espaço e borda.
 
-| Token | Sombra | Aplicação |
-|---|---|---|
-| Sombra suave | `0 8px 28px rgba(14, 44, 46, 0.07)` | Card elevado ou fotografia |
-| Sombra flutuante | `0 12px 36px rgba(14, 44, 46, 0.10)` | Cabeçalho fixo após rolagem ou menu móvel |
-| Sombra de foco | `0 0 0 4px rgba(221, 175, 159, 0.42)` | Apoio visual de foco, combinada com contorno |
+| Token            | Sombra                                | Aplicação                                    |
+| ---------------- | ------------------------------------- | -------------------------------------------- |
+| Sombra suave     | `0 8px 28px rgba(14, 44, 46, 0.07)`   | Card elevado ou fotografia                   |
+| Sombra flutuante | `0 12px 36px rgba(14, 44, 46, 0.10)`  | Cabeçalho fixo após rolagem ou menu móvel    |
+| Sombra de foco   | `0 0 0 4px rgba(221, 175, 159, 0.42)` | Apoio visual de foco, combinada com contorno |
 
 ### Regras
 
@@ -690,17 +690,17 @@ A fotografia deve mostrar a profissional com naturalidade, presença e seguranç
 
 ## 26. Aplicação por seção
 
-| Seção | Fundo | Composição | Destaque visual |
-|---|---|---|---|
-| Cabeçalho | Fundo base | Linha única | Nome e CTA compacto |
-| Hero | Fundo base | Texto + fotografia | H1 serifado e CTA terracota |
-| Identificação | Petróleo 50 | Introdução + cards editoriais | Títulos e respiro |
-| Sobre | Fundo quente | Fotografia + texto | Credenciais organizadas |
-| Abordagem | Fundo base | Texto editorial + três princípios | Numeração ou linha sutil |
-| Atendimento | Petróleo 50 | Etapas + duas modalidades | Informação prática e CTA |
-| FAQ | Fundo base | Coluna única estreita | Perguntas expansíveis |
-| Contato final | Petróleo 900 ou Terracota 50 | Bloco concentrado | Uma ação principal |
-| Rodapé | Petróleo 950 | Colunas simples | Identificação e links |
+| Seção         | Fundo                        | Composição                        | Destaque visual             |
+| ------------- | ---------------------------- | --------------------------------- | --------------------------- |
+| Cabeçalho     | Fundo base                   | Linha única                       | Nome e CTA compacto         |
+| Hero          | Fundo base                   | Texto + fotografia                | H1 serifado e CTA terracota |
+| Identificação | Petróleo 50                  | Introdução + cards editoriais     | Títulos e respiro           |
+| Sobre         | Fundo quente                 | Fotografia + texto                | Credenciais organizadas     |
+| Abordagem     | Fundo base                   | Texto editorial + três princípios | Numeração ou linha sutil    |
+| Atendimento   | Petróleo 50                  | Etapas + duas modalidades         | Informação prática e CTA    |
+| FAQ           | Fundo base                   | Coluna única estreita             | Perguntas expansíveis       |
+| Contato final | Petróleo 900 ou Terracota 50 | Bloco concentrado                 | Uma ação principal          |
+| Rodapé        | Petróleo 950                 | Colunas simples                   | Identificação e links       |
 
 ### Observação sobre o contato final
 
@@ -732,25 +732,25 @@ Se o contato final usar Petróleo 900, o rodapé deve usar Petróleo 950 com sep
 
 ## 28. Tokens essenciais consolidados
 
-| Categoria | Decisão principal |
-|---|---|
-| Cor institucional | Petróleo 900 — `#173F43` |
-| CTA | Terracota 700 — `#A4513E` |
-| Fundo base | `#FCFBF8` |
-| Texto principal | `#173033` |
-| Texto secundário | `#536568` |
-| Borda padrão | `#C9D6D3` |
-| Títulos | Newsreader |
-| Interface e corpo | Inter |
-| Corpo padrão | 16 px / entrelinha 1,65 |
-| H1 | 40–64 px |
-| Container principal | 1.200 px |
-| Leitura editorial | 720 px |
-| Grid | 12 / 8 / 4 colunas |
-| Radius de card | 20 px |
-| Radius de botão | 14 px |
-| Sombra padrão | Ausente; usar somente quando funcional |
-| Espaço de seção | 64–128 px conforme o viewport |
+| Categoria           | Decisão principal                      |
+| ------------------- | -------------------------------------- |
+| Cor institucional   | Petróleo 900 — `#173F43`               |
+| CTA                 | Terracota 700 — `#A4513E`              |
+| Fundo base          | `#FCFBF8`                              |
+| Texto principal     | `#173033`                              |
+| Texto secundário    | `#536568`                              |
+| Borda padrão        | `#C9D6D3`                              |
+| Títulos             | Newsreader                             |
+| Interface e corpo   | Inter                                  |
+| Corpo padrão        | 16 px / entrelinha 1,65                |
+| H1                  | 40–64 px                               |
+| Container principal | 1.200 px                               |
+| Leitura editorial   | 720 px                                 |
+| Grid                | 12 / 8 / 4 colunas                     |
+| Radius de card      | 20 px                                  |
+| Radius de botão     | 14 px                                  |
+| Sombra padrão       | Ausente; usar somente quando funcional |
+| Espaço de seção     | 64–128 px conforme o viewport          |
 
 ## 29. Critérios de aprovação visual
 

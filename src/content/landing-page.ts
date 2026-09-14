@@ -1,9 +1,4 @@
-import type {
-  ContentItem,
-  FaqItem,
-  NavigationItem,
-  ProcessStep,
-} from "@/types/content";
+import type { ContentItem, FaqItem, NavigationItem, ProcessStep } from "@/types/content";
 
 export const navigationItems: readonly NavigationItem[] = [
   { label: "Sobre", href: "#sobre" },
@@ -14,8 +9,7 @@ export const navigationItems: readonly NavigationItem[] = [
 
 export const heroContent = {
   eyebrow: "Psicoterapia para adultos",
-  title:
-    "Um acompanhamento atento para compreender o que você vive com mais clareza",
+  title: "Um acompanhamento atento para compreender o que você vive com mais clareza",
   description:
     "Atendimento psicológico com escuta e respeito, orientado pela Terapia Cognitivo-Comportamental e pelas necessidades de cada pessoa.",
   cta: "Conversar pelo WhatsApp",
@@ -45,8 +39,7 @@ export const needsContent = {
     },
     {
       title: "Mudanças e decisões",
-      description:
-        "Em períodos de transição, incerteza ou escolhas que pedem tempo e clareza.",
+      description: "Em períodos de transição, incerteza ou escolhas que pedem tempo e clareza.",
     },
     {
       title: "Padrões que se repetem",
@@ -76,8 +69,7 @@ export const approachContent = {
   principles: [
     {
       title: "Compreender",
-      description:
-        "Observar situações, pensamentos, emoções e comportamentos com mais clareza.",
+      description: "Observar situações, pensamentos, emoções e comportamentos com mais clareza.",
     },
     {
       title: "Construir",
@@ -141,8 +133,7 @@ export const processContent = {
 export const faqContent = {
   eyebrow: "Dúvidas frequentes",
   title: "Antes de entrar em contato",
-  description:
-    "Respostas objetivas para algumas dúvidas comuns sobre o início do acompanhamento.",
+  description: "Respostas objetivas para algumas dúvidas comuns sobre o início do acompanhamento.",
   items: [
     {
       question: "Como funciona a primeira sessão?",

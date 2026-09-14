@@ -583,11 +583,7 @@
         rgb(7 18 18 / 78%) 43%,
         rgb(7 18 18 / 90%) 100%
       ),
-      linear-gradient(
-        90deg,
-        rgb(7 18 18 / 42%) 0%,
-        rgb(7 18 18 / 10%) 100%
-      );
+      linear-gradient(90deg, rgb(7 18 18 / 42%) 0%, rgb(7 18 18 / 10%) 100%);
   }
 
   .heroImage {

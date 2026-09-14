@@ -10,15 +10,8 @@ type ContainerProps = PropsWithChildren<
   }
 >;
 
-export function Container({
-  children,
-  className = "",
-  size = "main",
-  ...props
-}: ContainerProps) {
-  const classes = [styles.container, styles[size], className]
-    .filter(Boolean)
-    .join(" ");
+export function Container({ children, className = "", size = "main", ...props }: ContainerProps) {
+  const classes = [styles.container, styles[size], className].filter(Boolean).join(" ");
 
   return (
     <div className={classes} {...props}>

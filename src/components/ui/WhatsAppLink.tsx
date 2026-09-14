@@ -9,9 +9,7 @@ type WhatsAppLinkProps = Omit<ComponentProps<typeof ButtonLink>, "href">;
 
 export function WhatsAppLink({ children, ...props }: WhatsAppLinkProps) {
   const visibleLabel = Children.toArray(children)
-    .filter((child): child is string | number =>
-      ["string", "number"].includes(typeof child),
-    )
+    .filter((child): child is string | number => ["string", "number"].includes(typeof child))
     .join(" ")
     .trim();
   const accessibleLabel = visibleLabel || "Conversar pelo WhatsApp";

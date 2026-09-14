@@ -20,17 +20,17 @@ O primeiro lançamento não terá formulário. O WhatsApp será o único canal d
 
 ### Base
 
-| Camada | Escolha | Justificativa |
-|---|---|---|
-| Framework | Next.js com App Router | Integração direta com Vercel, renderização estática, metadados, imagens e fontes otimizadas |
-| Linguagem | TypeScript em modo estrito | Segurança de tipos para conteúdo, configurações e propriedades dos componentes |
-| Biblioteca de UI | React, fornecido pelo Next.js | Base necessária do framework; sem biblioteca adicional de componentes |
-| Estilos | CSS global para tokens + CSS Modules | Escopo local, baixo custo, sem runtime e sem dependência de framework CSS |
-| Fontes | `next/font/local` | Arquivos locais, sem requisição externa, menor risco de mudança de layout |
-| Imagens | `next/image` com arquivos locais | Dimensões conhecidas, formatos modernos e carregamento responsivo na Vercel |
-| Pacotes | npm com `package-lock.json` | Fluxo conhecido pela Vercel e instalação reproduzível |
-| Hospedagem | Vercel | Deploy de Next.js sem configuração especial, HTTPS e previews por branch |
-| Controle de versão | Git | Histórico, revisão e gatilho para deploy automático |
+| Camada             | Escolha                              | Justificativa                                                                               |
+| ------------------ | ------------------------------------ | ------------------------------------------------------------------------------------------- |
+| Framework          | Next.js com App Router               | Integração direta com Vercel, renderização estática, metadados, imagens e fontes otimizadas |
+| Linguagem          | TypeScript em modo estrito           | Segurança de tipos para conteúdo, configurações e propriedades dos componentes              |
+| Biblioteca de UI   | React, fornecido pelo Next.js        | Base necessária do framework; sem biblioteca adicional de componentes                       |
+| Estilos            | CSS global para tokens + CSS Modules | Escopo local, baixo custo, sem runtime e sem dependência de framework CSS                   |
+| Fontes             | `next/font/local`                    | Arquivos locais, sem requisição externa, menor risco de mudança de layout                   |
+| Imagens            | `next/image` com arquivos locais     | Dimensões conhecidas, formatos modernos e carregamento responsivo na Vercel                 |
+| Pacotes            | npm com `package-lock.json`          | Fluxo conhecido pela Vercel e instalação reproduzível                                       |
+| Hospedagem         | Vercel                               | Deploy de Next.js sem configuração especial, HTTPS e previews por branch                    |
+| Controle de versão | Git                                  | Histórico, revisão e gatilho para deploy automático                                         |
 
 ### Dependências de produção
 
@@ -764,24 +764,24 @@ Não preparar infraestrutura das fases futuras dentro da Fase 1.
 
 ## 21. Decisões finais
 
-| Tema | Decisão |
-|---|---|
-| Stack | Next.js App Router + TypeScript |
-| Renderização | Estática no build |
-| Componentes | Server Components por padrão |
-| JavaScript do cliente | Mínimo; possivelmente nenhum na página inicial |
-| Estilos | CSS global com tokens + CSS Modules |
-| UI externa | Nenhuma biblioteca |
-| Ícones | SVGs locais selecionados |
-| Fontes | Newsreader e Inter locais via `next/font/local` |
-| Conteúdo | Objetos TypeScript tipados |
-| Imagens | Imports locais + `next/image` |
-| Conversão | Links diretos para WhatsApp |
-| Formulário | Fora do primeiro lançamento |
-| SEO | Metadata API, canonical, sitemap, robots e JSON-LD factual |
-| Analytics | Fora do primeiro lançamento |
-| Deploy | Git integrado à Vercel, previews e produção em `main` |
-| Manutenção | Conteúdo centralizado, dependências mínimas e sem CMS |
+| Tema                  | Decisão                                                    |
+| --------------------- | ---------------------------------------------------------- |
+| Stack                 | Next.js App Router + TypeScript                            |
+| Renderização          | Estática no build                                          |
+| Componentes           | Server Components por padrão                               |
+| JavaScript do cliente | Mínimo; possivelmente nenhum na página inicial             |
+| Estilos               | CSS global com tokens + CSS Modules                        |
+| UI externa            | Nenhuma biblioteca                                         |
+| Ícones                | SVGs locais selecionados                                   |
+| Fontes                | Newsreader e Inter locais via `next/font/local`            |
+| Conteúdo              | Objetos TypeScript tipados                                 |
+| Imagens               | Imports locais + `next/image`                              |
+| Conversão             | Links diretos para WhatsApp                                |
+| Formulário            | Fora do primeiro lançamento                                |
+| SEO                   | Metadata API, canonical, sitemap, robots e JSON-LD factual |
+| Analytics             | Fora do primeiro lançamento                                |
+| Deploy                | Git integrado à Vercel, previews e produção em `main`      |
+| Manutenção            | Conteúdo centralizado, dependências mínimas e sem CMS      |
 
 ## 22. Critério de sucesso técnico
 

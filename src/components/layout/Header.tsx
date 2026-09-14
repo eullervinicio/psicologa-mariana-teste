@@ -30,9 +30,7 @@ export function Header() {
         </nav>
 
         <div className={styles.action}>
-          <WhatsAppLink variant="secondary">
-            Conversar pelo WhatsApp
-          </WhatsAppLink>
+          <WhatsAppLink variant="secondary">Conversar pelo WhatsApp</WhatsAppLink>
         </div>
 
         <MobileNavigation />
