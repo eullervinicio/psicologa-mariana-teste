@@ -30,12 +30,12 @@ const {
 });
 
 const { props: desktopHeroImageProps } = getImageProps({
-  src: "/images/mariana-hero.jpg",
+  src: "/images/mariana-hero-original.jpg",
   alt: "",
   width: 1672,
   height: 941,
   sizes: "100vw",
-  quality: 75,
+  quality: 100,
   fetchPriority: "high",
 });
 
