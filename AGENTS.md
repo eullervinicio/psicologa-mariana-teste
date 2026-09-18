@@ -272,3 +272,28 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+## Git e commits automáticos
+
+Após concluir com sucesso qualquer alteração solicitada neste projeto:
+
+1. Faça automaticamente `git add` SOMENTE dos arquivos modificados pela tarefa atual.
+2. Crie automaticamente um commit Git.
+3. Use uma mensagem de commit curta e descritiva, relacionada exatamente à alteração realizada.
+4. Não espere que eu peça para fazer o commit.
+5. Não me peça para executar o commit manualmente.
+6. Não inclua no commit alterações antigas ou não relacionadas à tarefa atual.
+7. Se a tarefa falhar, estiver incompleta ou houver erro que impeça uma implementação correta, NÃO faça commit.
+8. Não faça commits intermediários desnecessários; normalmente faça um único commit ao concluir a tarefa.
+9. Após o commit, informe apenas de forma breve qual commit foi criado.
+
+## Economia de tokens
+
+Para alterações pequenas:
+
+- faça o menor diff possível;
+- não analise o projeto inteiro sem necessidade;
+- abra somente os arquivos necessários;
+- não faça refatorações fora do escopo;
+- não execute verificações pesadas quando não forem necessárias;
+- evite explicações longas.
