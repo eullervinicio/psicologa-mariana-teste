@@ -254,6 +254,12 @@
   }
 }
 
+@media (min-width: 80rem) {
+  .needsTopics li {
+    grid-template-rows: 2rem minmax(2.5rem, auto) auto;
+  }
+}
+
 .about {
   background: var(--color-background-warm);
 }
