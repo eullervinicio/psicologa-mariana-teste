@@ -145,6 +145,7 @@
 }
 
 .section,
+.needs,
 .about,
 .process,
 .faq,
@@ -152,25 +153,34 @@
   padding-block: var(--section-space-large);
 }
 
-.needsIntro {
-  max-width: 53rem;
+.needs {
+  background: var(--color-background-base);
 }
 
-.needsList {
-  margin-top: var(--space-10);
-  border-top: 1px solid var(--color-border);
+.needsLayout {
+  display: grid;
+  max-width: var(--container-wide);
+  grid-template-columns: minmax(27rem, 4.75fr) minmax(0, 7.25fr);
+  gap: clamp(2rem, 2.5vw, 2.5rem);
+}
+
+.needsIntro {
+  padding-right: clamp(1.5rem, 2.5vw, 2.5rem);
+  border-right: 1px solid var(--color-border-soft);
+}
+
+.needsTopics {
+  display: grid;
+  align-content: start;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(3rem, 5vw, 3.75rem) clamp(1rem, 1.5vw, 1.5rem);
   list-style: none;
 }
 
-.needsList li {
-  display: grid;
-  padding-block: var(--space-6);
-  border-bottom: 1px solid var(--color-border-soft);
-  grid-template-columns: 4rem minmax(13rem, 4fr) minmax(0, 6fr);
-  gap: var(--space-5);
+.needsTopics li {
+  min-width: 0;
 }
 
-.needsList span,
 .principles span,
 .steps > li > span {
   color: var(--color-secondary-700);
@@ -179,7 +189,7 @@
   letter-spacing: 0.1em;
 }
 
-.needsList h3,
+.needsTopics h3,
 .principles h3,
 .steps h3,
 .modalities h3 {
@@ -190,11 +200,58 @@
   line-height: 1.25;
 }
 
-.needsList p,
+.needsTopics h3 {
+  margin-top: var(--space-4);
+  font-family: var(--font-interface), Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.needsTopics p,
 .principles p,
 .steps p,
 .modalities p {
   color: var(--color-text-secondary);
+}
+
+.needsTopics p {
+  margin-top: var(--space-3);
+  line-height: 1.65;
+}
+
+.needsIcon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-secondary-700);
+  transition:
+    color var(--transition-fast),
+    transform 220ms ease;
+}
+
+@media (hover: hover) {
+  .needsTopics li:hover .needsIcon {
+    color: var(--color-secondary-800);
+    transform: translateY(-2px);
+  }
+}
+
+@media (min-width: 64rem) {
+  .needsIntro h2 {
+    max-width: 24ch;
+    font-size: clamp(2.125rem, 3.5vw, 2.75rem);
+  }
+
+  .needsTopics li {
+    display: grid;
+    grid-template-rows: 2rem minmax(4rem, auto) auto;
+    align-content: start;
+  }
+
+  .steps li > div {
+    display: grid;
+    grid-template-rows: minmax(3.75rem, auto) auto;
+  }
 }
 
 .about {
@@ -529,6 +586,22 @@
     width: min(100%, 38rem);
   }
 
+  .needsLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .needsIntro {
+    max-width: 48rem;
+    padding-right: 0;
+    padding-bottom: var(--space-8);
+    border-right: 0;
+    border-bottom: 1px solid var(--color-border-soft);
+  }
+
+  .needsTopics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .aboutGrid,
   .approachIntro,
   .faqGrid,
@@ -550,6 +623,18 @@
 }
 
 @media (min-width: 64rem) and (max-width: 74.9375rem) {
+  .needsLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .needsIntro {
+    max-width: 48rem;
+    padding-right: 0;
+    padding-bottom: var(--space-8);
+    border-right: 0;
+    border-bottom: 1px solid var(--color-border-soft);
+  }
+
   .heroGrid {
     padding-block: 7rem 3rem;
   }
@@ -621,16 +706,16 @@
     max-width: none;
   }
 
-  .needsList {
-    margin-top: var(--space-8);
+  .needsLayout {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
   }
 
-  .needsList li {
-    grid-template-columns: 2.5rem 1fr;
-  }
-
-  .needsList p {
-    grid-column: 2;
+  .needsIntro {
+    padding-right: 0;
+    padding-bottom: var(--space-7);
+    border-right: 0;
+    border-bottom: 1px solid var(--color-border-soft);
   }
 
   .aboutPortrait {
@@ -701,12 +786,9 @@
     gap: var(--space-2);
   }
 
-  .needsList li {
+  .needsTopics {
     grid-template-columns: 1fr;
-  }
-
-  .needsList p {
-    grid-column: 1;
+    gap: var(--space-7);
   }
 
   .faqList summary {

@@ -1,4 +1,12 @@
 import Image, { getImageProps } from "next/image";
+import {
+  Brain,
+  ClipboardCheck,
+  Compass,
+  HeartHandshake,
+  RefreshCw,
+  Sparkles,
+} from "lucide-react";
 
 import { Container } from "@/components/layout/Container";
 import { ContactForm } from "@/components/contact/ContactForm";
@@ -17,6 +25,8 @@ import {
 import { siteConfig } from "@/content/site-config";
 
 import styles from "./LandingSections.module.css";
+
+const needsIcons = [Brain, Compass, HeartHandshake, RefreshCw, Sparkles, ClipboardCheck] as const;
 
 const {
   props: { srcSet: mobileHeroSrcSet },
@@ -92,8 +102,8 @@ export function HeroSection() {
 
 export function NeedsSection() {
   return (
-    <section className={styles.section} aria-labelledby="needs-title">
-      <Container>
+    <section className={styles.needs} aria-labelledby="needs-title">
+      <Container className={styles.needsLayout}>
         <div className={styles.needsIntro}>
           <SectionHeading
             eyebrow={needsContent.eyebrow}
@@ -103,15 +113,19 @@ export function NeedsSection() {
           />
         </div>
 
-        <ol className={styles.needsList}>
-          {needsContent.items.map((item, index) => (
-            <li key={item.title}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-            </li>
-          ))}
-        </ol>
+        <ul className={styles.needsTopics}>
+          {needsContent.items.map((item, index) => {
+            const Icon = needsIcons[index];
+
+            return (
+              <li key={item.title}>
+                <Icon aria-hidden="true" className={styles.needsIcon} strokeWidth={1.5} />
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </li>
+            );
+          })}
+        </ul>
       </Container>
     </section>
   );

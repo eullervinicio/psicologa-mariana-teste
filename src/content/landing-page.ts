@@ -17,34 +17,36 @@ export const heroContent = {
 } as const;
 
 export const needsContent = {
-  eyebrow: "Quando buscar acompanhamento",
-  title: "Diferentes momentos podem levar alguém a buscar terapia",
+  eyebrow: "Em que posso te ajudar",
+  title: "Diferentes momentos podem levar alguém à terapia",
   description:
-    "Nem sempre é simples nomear o que está acontecendo. Às vezes, a procura começa por um incômodo persistente; em outras, pelo desejo de compreender escolhas, relações ou formas de lidar com a própria rotina.",
+    "A terapia é para quem deseja se conhecer melhor, lidar com dificuldades emocionais e construir uma vida mais equilibrada. Veja algumas situações que podem ser trabalhadas no processo terapêutico.",
   items: [
     {
-      title: "Ansiedade e sobrecarga",
-      description:
-        "Quando preocupações, cobranças e tarefas parecem ocupar mais espaço do que você gostaria.",
+      title: "Ansiedade e estresse",
+      description: "Quando a mente não desacelera e tudo parece demais.",
     },
     {
-      title: "Relações e limites",
-      description:
-        "Para olhar com mais atenção para vínculos, comunicação e dificuldades em estabelecer limites.",
+      title: "Autoconhecimento",
+      description: "Para entender seus padrões e fazer escolhas mais conscientes.",
     },
     {
-      title: "Autoestima e autoconhecimento",
+      title: "Relacionamentos",
       description:
-        "Um espaço para reconhecer necessidades, compreender a própria história e ampliar a percepção sobre si.",
+        "Dificuldades nos relacionamentos afetivos, familiares ou profissionais.",
     },
     {
-      title: "Mudanças e decisões",
-      description: "Em períodos de transição, incerteza ou escolhas que pedem tempo e clareza.",
+      title: "Mudanças e transições",
+      description: "Momentos de mudança, luto, novos ciclos e decisões importantes.",
     },
     {
-      title: "Padrões que se repetem",
+      title: "Autoestima",
+      description: "Para se sentir mais segura, confiante e em paz com quem você é.",
+    },
+    {
+      title: "Demandas específicas",
       description:
-        "Quando certas situações, pensamentos ou reações voltam a acontecer e despertam o desejo de fazer diferente.",
+        "Questões como depressão, TDAH, procrastinação e outras demandas emocionais.",
     },
   ] satisfies readonly ContentItem[],
 } as const;
