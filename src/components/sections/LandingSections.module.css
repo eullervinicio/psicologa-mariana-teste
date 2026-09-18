@@ -178,7 +178,10 @@
 }
 
 .needsTopics li {
+  display: flex;
   min-width: 0;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .principles span,
@@ -201,7 +204,7 @@
 }
 
 .needsTopics h3 {
-  margin: var(--space-4) 0 0;
+  margin: var(--space-5) 0 0;
   font-family: var(--font-interface), Arial, Helvetica, sans-serif;
   font-size: 1.125rem;
   font-weight: 600;
@@ -240,18 +243,6 @@
   .needsIntro h2 {
     max-width: 24ch;
     font-size: clamp(2.125rem, 3.5vw, 2.75rem);
-  }
-
-  .needsTopics li {
-    display: flex;
-    height: auto;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  .needsTopics h3 {
-    margin-top: var(--space-5);
   }
 
   .steps li > div {
