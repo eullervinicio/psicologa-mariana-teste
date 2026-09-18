@@ -297,3 +297,38 @@ Para alterações pequenas:
 - não faça refatorações fora do escopo;
 - não execute verificações pesadas quando não forem necessárias;
 - evite explicações longas.
+
+## Push automático para produção
+
+Após concluir com sucesso qualquer alteração solicitada neste projeto:
+
+1. Siga normalmente as regras existentes de `git add` e commit automático.
+2. Após criar o commit, faça automaticamente push para a branch `main`.
+3. Use o remoto Git já configurado no projeto.
+4. Não espere que eu peça para fazer o push.
+5. Não me peça para executar o push manualmente.
+6. Não use `--force` ou `--force-with-lease`.
+7. Nunca sobrescreva alterações remotas de forma destrutiva.
+8. Se houver conflito Git, divergência de branch, falha de autenticação ou qualquer erro durante o push:
+   - NÃO force nenhuma operação;
+   - pare;
+   - informe brevemente o problema.
+9. Se a implementação estiver incompleta ou apresentar erro relevante, NÃO faça push.
+10. Não faça commits ou pushes intermediários desnecessários.
+11. Normalmente faça apenas:
+    alteração → git add dos arquivos da tarefa → commit → push para main.
+12. Como a branch `main` está conectada à Vercel, não execute deploy manual da Vercel. O push deverá disparar o deploy automaticamente.
+13. Após um push bem-sucedido, responda de forma curta informando:
+
+- commit criado;
+- confirmação de push para `main`.
+
+14. Após isso, PARE.
+
+## Segurança do Git
+
+- Nunca executar `git reset --hard`.
+- Nunca executar `git clean -fd`.
+- Nunca fazer force push.
+- Nunca apagar commits existentes.
+- Nunca incluir no commit arquivos ou alterações não relacionados à tarefa atual.
