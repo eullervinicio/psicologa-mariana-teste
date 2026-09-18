@@ -201,8 +201,7 @@
 }
 
 .needsTopics h3 {
-  align-self: end;
-  margin-top: var(--space-4);
+  margin-top: var(--space-5);
   font-family: var(--font-interface), Arial, Helvetica, sans-serif;
   font-size: 1.125rem;
   font-weight: 600;
@@ -244,20 +243,14 @@
   }
 
   .needsTopics li {
-    display: grid;
-    grid-template-rows: 2rem minmax(4rem, auto) auto;
-    align-content: start;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .steps li > div {
     display: grid;
     grid-template-rows: minmax(3.75rem, auto) auto;
-  }
-}
-
-@media (min-width: 80rem) {
-  .needsTopics li {
-    grid-template-rows: 2rem auto auto;
   }
 }
 
