@@ -201,7 +201,7 @@
 }
 
 .needsTopics h3 {
-  margin-top: var(--space-4);
+  margin: var(--space-4) 0 0;
   font-family: var(--font-interface), Arial, Helvetica, sans-serif;
   font-size: 1.125rem;
   font-weight: 600;
@@ -216,7 +216,7 @@
 }
 
 .needsTopics p {
-  margin-top: var(--space-3);
+  margin: var(--space-3) 0 0;
   line-height: 1.65;
 }
 
@@ -243,20 +243,20 @@
   }
 
   .needsTopics li {
-    display: grid;
-    grid-template-rows: 2rem minmax(4rem, auto) auto;
-    align-content: start;
+    display: flex;
+    height: auto;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .needsTopics h3 {
+    margin-top: var(--space-5);
   }
 
   .steps li > div {
     display: grid;
     grid-template-rows: minmax(3.75rem, auto) auto;
-  }
-}
-
-@media (min-width: 80rem) {
-  .needsTopics li {
-    grid-template-rows: 2rem minmax(2.5rem, auto) auto;
   }
 }
 
