@@ -336,12 +336,15 @@
 }
 
 .approachLayout {
+  width: min(92vw, 93.75rem);
+  max-width: none;
+  margin-inline: auto;
   display: grid;
-  grid-template-columns: minmax(20rem, 4.5fr) minmax(0, 7.5fr);
+  grid-template-columns: minmax(25rem, 1.8fr) minmax(42.5rem, 4fr);
 }
 
 .approachIntro {
-  padding-right: clamp(2.5rem, 4vw, 4rem);
+  padding-right: clamp(2rem, 3vw, 3rem);
 }
 
 .approachIntro h2 {
@@ -363,7 +366,7 @@
 
 .principles li {
   min-width: 0;
-  padding: var(--space-4) clamp(1rem, 1.7vw, 1.75rem) 0;
+  padding: var(--space-4) clamp(1.5rem, 1.75vw, 2rem) 0;
   border-left: 1px solid rgb(40 70 65 / 10%);
 }
 
@@ -695,6 +698,28 @@
 }
 
 @media (min-width: 64rem) and (max-width: 74.9375rem) {
+  .approachLayout {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .approachIntro {
+    max-width: 45rem;
+    padding-right: 0;
+  }
+
+  .principles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .principles li {
+    padding: var(--space-6);
+  }
+
+  .principles li:nth-child(n + 3) {
+    border-top: 1px solid var(--color-border-soft);
+  }
+
   .needsLayout {
     grid-template-columns: 1fr;
   }
