@@ -8,7 +8,6 @@ import {
   HeartHandshake,
   Heart,
   Leaf,
-  Laptop,
   MessageCircle,
   RefreshCw,
   Search,
@@ -40,7 +39,6 @@ import styles from "./LandingSections.module.css";
 const needsIcons = [Brain, Compass, HeartHandshake, RefreshCw, Sparkles, ClipboardCheck] as const;
 const approachIcons = [Search, Leaf, Settings, ChartNoAxesColumnIncreasing] as const;
 const processIcons = [MessageCircle, CalendarDays, UserRound, Heart] as const;
-const modalityIcons = [Laptop, CalendarDays] as const;
 
 const {
   props: { srcSet: mobileHeroSrcSet },
@@ -285,31 +283,24 @@ export function ProcessSection() {
           </div>
 
           <div className={styles.modalities}>
-            {processContent.modalities.map((modality, index) => {
-              const Icon = modalityIcons[index];
-
-              return (
-                <article key={modality.title}>
-                  <div className={styles.modalityImage}>
-                    <Image
-                      src={modality.image}
-                      alt={modality.imageAlt}
-                      fill
-                      sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1199px) calc(100vw - 64px), 42vw"
-                    />
+            {processContent.modalities.map((modality) => (
+              <article key={modality.title}>
+                <div className={styles.modalityImage}>
+                  <Image
+                    src={modality.image}
+                    alt={modality.imageAlt}
+                    fill
+                    sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1199px) calc(100vw - 64px), 22vw"
+                  />
+                </div>
+                <div className={styles.modalityContent}>
+                  <div>
+                    <h3>{modality.title}</h3>
+                    <p>{modality.description}</p>
                   </div>
-                  <div className={styles.modalityContent}>
-                    <div className={styles.modalityIcon} aria-hidden="true">
-                      <Icon strokeWidth={1.6} />
-                    </div>
-                    <div>
-                      <h3>{modality.title}</h3>
-                      <p>{modality.description}</p>
-                    </div>
-                  </div>
-                </article>
-              );
-            })}
+                </div>
+              </article>
+            ))}
           </div>
         </Container>
       </div>
