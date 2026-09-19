@@ -13,6 +13,8 @@ import { ContactForm } from "@/components/contact/ContactForm";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
 import aboutImage from "@/assets/images/mariana-sobre.webp";
+import aboutPlantImage from "@/assets/images/planta-decorativa.png";
+import signatureImage from "@/assets/images/assinatura-mariana-alves.png";
 import {
   aboutContent,
   approachContent,
@@ -134,6 +136,13 @@ export function NeedsSection() {
 export function AboutSection() {
   return (
     <section id="sobre" className={styles.about} aria-labelledby="about-title">
+      <Image
+        className={styles.aboutPlant}
+        src={aboutPlantImage}
+        alt=""
+        sizes="(max-width: 767px) 13rem, (max-width: 1279px) 16rem, 22rem"
+        loading="lazy"
+      />
       <Container className={styles.aboutGrid}>
         <figure className={styles.aboutPortrait}>
           <Image
@@ -159,6 +168,13 @@ export function AboutSection() {
             ))}
           </div>
           <div className={styles.signature}>
+            <Image
+              className={styles.signatureImage}
+              src={signatureImage}
+              alt=""
+              sizes="(max-width: 767px) 17rem, 21rem"
+              loading="lazy"
+            />
             <strong>{siteConfig.name}</strong>
             <span>
               {siteConfig.profession} · {siteConfig.registration}

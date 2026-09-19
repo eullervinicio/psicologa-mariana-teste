@@ -252,14 +252,30 @@
 }
 
 .about {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   background: var(--color-background-warm);
 }
 
 .aboutGrid {
   display: grid;
+  position: relative;
+  z-index: 1;
   align-items: stretch;
   grid-template-columns: minmax(18rem, 5fr) minmax(0, 7fr);
   gap: clamp(3rem, 8vw, 8rem);
+}
+
+.aboutPlant {
+  position: absolute;
+  z-index: 0;
+  right: -2.5rem;
+  bottom: -3rem;
+  width: clamp(16rem, 22vw, 22rem);
+  height: auto;
+  pointer-events: none;
+  user-select: none;
 }
 
 .aboutPortrait {
@@ -291,8 +307,15 @@
 
 .signature {
   display: grid;
+  width: fit-content;
   margin-top: var(--space-7);
   gap: var(--space-1);
+}
+
+.signatureImage {
+  width: min(21rem, 100%);
+  height: auto;
+  margin-bottom: var(--space-1);
 }
 
 .signature strong {
@@ -718,6 +741,17 @@
   .aboutPortrait {
     aspect-ratio: 4 / 5;
     min-height: 0;
+  }
+
+  .aboutPlant {
+    right: -5rem;
+    bottom: -2rem;
+    width: 13rem;
+    opacity: 0.72;
+  }
+
+  .signatureImage {
+    width: min(17rem, 100%);
   }
 
   .principles,
