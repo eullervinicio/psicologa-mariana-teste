@@ -1,10 +1,14 @@
 import Image, { getImageProps } from "next/image";
 import {
   Brain,
+  ChartNoAxesColumnIncreasing,
   ClipboardCheck,
   Compass,
   HeartHandshake,
+  Leaf,
   RefreshCw,
+  Search,
+  Settings,
   Sparkles,
 } from "lucide-react";
 
@@ -29,6 +33,7 @@ import { siteConfig } from "@/content/site-config";
 import styles from "./LandingSections.module.css";
 
 const needsIcons = [Brain, Compass, HeartHandshake, RefreshCw, Sparkles, ClipboardCheck] as const;
+const approachIcons = [Search, Leaf, Settings, ChartNoAxesColumnIncreasing] as const;
 
 const {
   props: { srcSet: mobileHeroSrcSet },
@@ -189,7 +194,7 @@ export function AboutSection() {
 export function ApproachSection() {
   return (
     <section id="abordagem" className={styles.section} aria-labelledby="approach-title">
-      <Container>
+      <Container className={styles.approachLayout}>
         <div className={styles.approachIntro}>
           <SectionHeading
             eyebrow={approachContent.eyebrow}
@@ -204,13 +209,19 @@ export function ApproachSection() {
         </div>
 
         <ol className={styles.principles}>
-          {approachContent.principles.map((principle, index) => (
-            <li key={principle.title}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <h3>{principle.title}</h3>
-              <p>{principle.description}</p>
-            </li>
-          ))}
+          {approachContent.principles.map((principle, index) => {
+            const Icon = approachIcons[index];
+
+            return (
+              <li key={principle.title}>
+                <div className={styles.principleIcon} aria-hidden="true">
+                  <Icon strokeWidth={1.5} />
+                </div>
+                <h3>{principle.title}</h3>
+                <p>{principle.description}</p>
+              </li>
+            );
+          })}
         </ol>
       </Container>
     </section>

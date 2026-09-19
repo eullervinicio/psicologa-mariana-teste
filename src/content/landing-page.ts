@@ -61,27 +61,27 @@ export const aboutContent = {
 } as const;
 
 export const approachContent = {
-  eyebrow: "Abordagem",
-  title: "Terapia Cognitivo-Comportamental na prática",
+  eyebrow: "Minha abordagem",
+  title: "Terapia\nCognitivo-Comportamental",
   paragraphs: [
-    "A Terapia Cognitivo-Comportamental, também conhecida como TCC, observa a relação entre pensamentos, emoções e comportamentos.",
-    "Ao longo do acompanhamento, buscamos compreender como essas relações aparecem na sua vida e construir formas de lidar com elas que sejam coerentes com o seu momento.",
-    "O processo é colaborativo: as questões são conversadas com clareza, e o ritmo do atendimento considera as necessidades de cada pessoa.",
+    "Trabalhamos juntos para compreender o que você sente, identificar padrões e desenvolver novas formas de pensar e agir. A TCC é uma abordagem baseada em evidências, focada no presente e em mudanças reais e possíveis para a sua vida.",
   ],
   principles: [
     {
       title: "Compreender",
-      description: "Observar situações, pensamentos, emoções e comportamentos com mais clareza.",
+      description: "Entender o que está acontecendo e quais são os seus padrões.",
     },
     {
-      title: "Construir",
-      description:
-        "Desenvolver novas formas de responder às dificuldades, respeitando possibilidades reais.",
+      title: "Refletir",
+      description: "Explorar pensamentos, emoções e comportamentos com mais clareza.",
     },
     {
-      title: "Acompanhar",
-      description:
-        "Revisar o percurso em conjunto e ajustar o processo ao que fizer sentido ao longo do tempo.",
+      title: "Desenvolver",
+      description: "Aprender estratégias práticas para lidar com os desafios da vida.",
+    },
+    {
+      title: "Evoluir",
+      description: "Construir uma rotina mais leve, com mais equilíbrio e bem-estar.",
     },
   ] satisfies readonly ContentItem[],
 } as const;

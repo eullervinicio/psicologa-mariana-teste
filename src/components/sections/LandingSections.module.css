@@ -335,44 +335,65 @@
   font-size: 0.8125rem;
 }
 
-.approachIntro {
+.approachLayout {
   display: grid;
-  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
-  gap: clamp(3rem, 8vw, 8rem);
+  grid-template-columns: minmax(20rem, 4.5fr) minmax(0, 7.5fr);
+}
+
+.approachIntro {
+  padding-right: clamp(2.5rem, 4vw, 4rem);
+}
+
+.approachIntro h2 {
+  max-width: none;
+  font-size: clamp(2.125rem, 3vw, 2.375rem);
+  white-space: pre;
 }
 
 .approachIntro .bodyCopy {
-  margin-top: var(--space-8);
+  max-width: 34rem;
+  margin-top: var(--space-6);
 }
 
 .principles {
   display: grid;
-  margin-top: var(--space-10);
-  border-top: 1px solid var(--color-border);
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   list-style: none;
 }
 
 .principles li {
-  min-height: 17rem;
-  padding: var(--space-6);
-  border-right: 1px solid var(--color-border-soft);
-}
-
-.principles li:first-child {
-  padding-left: 0;
-}
-
-.principles li:last-child {
-  border-right: 0;
+  min-width: 0;
+  padding: var(--space-4) clamp(1rem, 1.7vw, 1.75rem) 0;
+  border-left: 1px solid rgb(40 70 65 / 10%);
 }
 
 .principles h3 {
-  margin-top: var(--space-8);
+  margin-top: var(--space-5);
+  font-size: clamp(1.625rem, 2vw, 1.875rem);
 }
 
 .principles p {
   margin-top: var(--space-3);
+  line-height: 1.65;
+}
+
+.principleIcon {
+  display: grid;
+  width: clamp(4.5rem, 5.5vw, 5rem);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  color: var(--color-primary-900);
+  background: rgb(247 244 239 / 88%);
+  place-items: center;
+}
+
+.principleIcon svg {
+  width: clamp(1.875rem, 2.5vw, 2.25rem);
+  height: auto;
+}
+
+.principles li:nth-child(odd) .principleIcon {
+  color: var(--color-secondary-700);
 }
 
 .process {
@@ -628,10 +649,31 @@
   }
 
   .aboutGrid,
-  .approachIntro,
   .faqGrid,
   .contactGrid {
     gap: var(--space-8);
+  }
+
+  .approachLayout {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .approachIntro {
+    max-width: 45rem;
+    padding-right: 0;
+  }
+
+  .principles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .principles li {
+    padding: var(--space-6);
+  }
+
+  .principles li:nth-child(n + 3) {
+    border-top: 1px solid var(--color-border-soft);
   }
 
   .aboutPortrait {
@@ -711,7 +753,6 @@
   }
 
   .aboutGrid,
-  .approachIntro,
   .faqGrid,
   .contactGrid {
     grid-template-columns: 1fr;
@@ -778,8 +819,17 @@
   .principles li:first-child {
     min-height: 0;
     padding: var(--space-6) 0;
+    border-left: 0;
     border-right: 0;
     border-bottom: 1px solid var(--color-border-soft);
+  }
+
+  .principles li:last-child {
+    border-bottom: 0;
+  }
+
+  .approachIntro h2 {
+    white-space: pre-line;
   }
 
   .principles h3 {
