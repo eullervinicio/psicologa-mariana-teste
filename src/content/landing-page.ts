@@ -88,48 +88,55 @@ export const approachContent = {
 
 export const processContent = {
   eyebrow: "Como funciona",
-  title: "Um primeiro contato simples, com espaço para esclarecer dúvidas",
+  title: "Um primeiro contato simples, com todo o cuidado que você merece",
   description:
-    "Você não precisa chegar com tudo organizado. O contato inicial serve para receber informações sobre o atendimento e verificar possibilidades de horário.",
+    "Do primeiro contato ao acompanhamento, tudo é pensado para que você se sinta acolhido e seguro em cada etapa.",
+  cta: "Conversar pelo WhatsApp",
   steps: [
     {
-      number: "01",
-      title: "Envie uma mensagem",
-      description:
-        "Ao clicar no botão do WhatsApp, você pode se apresentar brevemente e dizer se busca atendimento online ou presencial.",
+      number: "1",
+      title: "Você entra em contato",
+      description: "Tire suas dúvidas e agende seu horário pelo WhatsApp.",
     },
     {
-      number: "02",
-      title: "Receba as informações",
-      description:
-        "Nesse contato, você poderá esclarecer dúvidas sobre disponibilidade, honorários e funcionamento do atendimento.",
+      number: "2",
+      title: "Agendamos sua sessão",
+      description: "Escolha o melhor dia e horário, de forma prática e rápida.",
     },
     {
-      number: "03",
-      title: "Combine o primeiro encontro",
-      description:
-        "Havendo disponibilidade e interesse, definimos o melhor horário para a primeira sessão.",
+      number: "3",
+      title: "Nos encontramos (online ou presencial)",
+      description: "Um espaço seguro para você falar e ser ouvida.",
     },
     {
-      number: "04",
-      title: "Inicie a conversa",
+      number: "4",
+      title: "Seguimos juntos",
       description:
-        "Na primeira sessão, conversamos sobre o que motivou sua busca e sobre como o processo terapêutico pode ser conduzido.",
+        "Um acompanhamento contínuo, no seu ritmo, com foco no que realmente importa para você.",
     },
   ] satisfies readonly ProcessStep[],
+  modalitiesEyebrow: "Modalidades de atendimento",
+  modalitiesTitle: "Terapia do seu jeito, onde você estiver",
+  modalitiesDescription:
+    "Você pode optar pelo atendimento presencial, em um espaço acolhedor e confortável, ou pela modalidade online, com a mesma qualidade, sigilo e acolhimento.",
   modalities: [
     {
       title: "Atendimento online",
-      description:
-        "Realizado por videochamada, permite fazer as sessões a partir de um local reservado, com privacidade e conexão estável.",
+      description: "Com a mesma qualidade e acolhimento, no conforto da sua casa.",
+      image: "/images/atendimento-online.jpg",
+      imageAlt: "Ambiente acolhedor para atendimento online, com notebook sobre uma mesa.",
     },
     {
       title: "Atendimento presencial",
-      description:
-        "Realizado em São Paulo — SP, em ambiente preparado para o acompanhamento psicológico.",
+      description: "Um espaço pensado para o seu bem-estar, com privacidade e conforto.",
+      image: "/images/atendimento-presencial.jpg",
+      imageAlt: "Consultório acolhedor para atendimento presencial, com poltrona e plantas.",
     },
-  ] satisfies readonly ContentItem[],
-  note: "As informações sobre disponibilidade, honorários e formas de pagamento são fornecidas pelo WhatsApp.",
+  ],
+  testimonial:
+    "A terapia me ajudou a olhar para mim com mais leveza e a encontrar caminhos que fazem sentido. Hoje me sinto mais segura e em paz com as minhas escolhas.",
+  testimonialAttribution: "Paciente (nome preservado)",
+  closingStatement: "Cuidar\nda sua saúde mental\ntambém é uma forma\nde avançar.",
 } as const;
 
 export const faqContent = {

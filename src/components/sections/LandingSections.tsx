@@ -1,15 +1,20 @@
 import Image, { getImageProps } from "next/image";
 import {
   Brain,
+  CalendarDays,
   ChartNoAxesColumnIncreasing,
   ClipboardCheck,
   Compass,
   HeartHandshake,
+  Heart,
   Leaf,
+  Laptop,
+  MessageCircle,
   RefreshCw,
   Search,
   Settings,
   Sparkles,
+  UserRound,
 } from "lucide-react";
 
 import { Container } from "@/components/layout/Container";
@@ -34,6 +39,8 @@ import styles from "./LandingSections.module.css";
 
 const needsIcons = [Brain, Compass, HeartHandshake, RefreshCw, Sparkles, ClipboardCheck] as const;
 const approachIcons = [Search, Leaf, Settings, ChartNoAxesColumnIncreasing] as const;
+const processIcons = [MessageCircle, CalendarDays, UserRound, Heart] as const;
+const modalityIcons = [Laptop, CalendarDays] as const;
 
 const {
   props: { srcSet: mobileHeroSrcSet },
@@ -231,45 +238,94 @@ export function ApproachSection() {
 export function ProcessSection() {
   return (
     <section id="atendimento" className={styles.process} aria-labelledby="process-title">
-      <Container>
-        <div className={styles.processIntro}>
-          <SectionHeading
-            eyebrow={processContent.eyebrow}
-            title={processContent.title}
-            description={processContent.description}
-            id="process-title"
-          />
-          <WhatsAppLink variant="secondary">
-            Solicitar agendamento
-            <Arrow />
-          </WhatsAppLink>
-        </div>
+      <div className={styles.processFlow}>
+        <Container className={styles.processLayout}>
+          <div className={styles.processIntro}>
+            <SectionHeading
+              eyebrow={processContent.eyebrow}
+              title={processContent.title}
+              description={processContent.description}
+              id="process-title"
+            />
+            <WhatsAppLink>
+              {processContent.cta}
+              <Arrow />
+            </WhatsAppLink>
+          </div>
 
-        <ol className={styles.steps}>
-          {processContent.steps.map((step) => (
-            <li key={step.number}>
-              <span>{step.number}</span>
-              <div>
-                <h3>{step.title}</h3>
-                <p>{step.description}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
+          <ol className={styles.steps}>
+            {processContent.steps.map((step, index) => {
+              const Icon = processIcons[index];
 
-        <div className={styles.modalities}>
-          {processContent.modalities.map((modality) => (
-            <article key={modality.title}>
-              <div className={styles.modalityIcon} aria-hidden="true">
-                <span />
-              </div>
-              <h3>{modality.title}</h3>
-              <p>{modality.description}</p>
-            </article>
-          ))}
-        </div>
-        <p className={styles.processNote}>{processContent.note}</p>
-      </Container>
+              return (
+                <li key={step.number}>
+                  <span className={styles.stepNumber}>{step.number}</span>
+                  <div className={styles.stepIcon} aria-hidden="true">
+                    <Icon strokeWidth={1.6} />
+                  </div>
+                  <div className={styles.stepContent}>
+                    <h3>{step.title}</h3>
+                    <p>{step.description}</p>
+                  </div>
+                </li>
+              );
+            })}
+          </ol>
+        </Container>
+      </div>
+
+      <div className={styles.modalitiesSection}>
+        <Container className={styles.processWideContainer}>
+          <div className={styles.modalitiesHeader}>
+            <div>
+              <p className={styles.modalitiesEyebrow}>{processContent.modalitiesEyebrow}</p>
+              <h2>{processContent.modalitiesTitle}</h2>
+            </div>
+            <p>{processContent.modalitiesDescription}</p>
+          </div>
+
+          <div className={styles.modalities}>
+            {processContent.modalities.map((modality, index) => {
+              const Icon = modalityIcons[index];
+
+              return (
+                <article key={modality.title}>
+                  <div className={styles.modalityImage}>
+                    <Image
+                      src={modality.image}
+                      alt={modality.imageAlt}
+                      fill
+                      sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1199px) calc(100vw - 64px), 42vw"
+                    />
+                  </div>
+                  <div className={styles.modalityContent}>
+                    <div className={styles.modalityIcon} aria-hidden="true">
+                      <Icon strokeWidth={1.6} />
+                    </div>
+                    <div>
+                      <h3>{modality.title}</h3>
+                      <p>{modality.description}</p>
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </Container>
+      </div>
+
+      <div className={styles.processClosing}>
+        <Container className={styles.processClosingLayout}>
+          <span className={styles.quoteMark} aria-hidden="true">“</span>
+          {/* Conteúdo demonstrativo fornecido pelo cliente; substituir por relato autorizado antes da publicação real. */}
+          <blockquote>
+            <p>“{processContent.testimonial}”</p>
+            <cite>— {processContent.testimonialAttribution}</cite>
+          </blockquote>
+          <Image className={styles.processPlant} src={aboutPlantImage} alt="" sizes="(max-width: 767px) 12rem, 20rem" />
+          <p className={styles.closingStatement}>{processContent.closingStatement}</p>
+        </Container>
+      </div>
     </section>
   );
 }

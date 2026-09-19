@@ -202,49 +202,61 @@ A condução do acompanhamento é individual. A abordagem oferece uma base para 
 
 ### Texto de contexto
 
-**Atendimento psicológico**
+**Como funciona**
 
 ### Título da seção
 
-## Um primeiro contato simples, com espaço para esclarecer dúvidas
+## Um primeiro contato simples, com todo o cuidado que você merece
 
 ### Texto de abertura
 
-Você pode iniciar a conversa pelo WhatsApp para conhecer as condições do atendimento, verificar disponibilidade e avaliar qual modalidade faz mais sentido para você. Essa mensagem inicial não representa um compromisso de agendamento.
+Do primeiro contato ao acompanhamento, tudo é pensado para que você se sinta acolhido e seguro em cada etapa.
 
 ### Etapas
 
-#### 1. Primeiro contato
+#### 1. Você entra em contato
 
-Envie uma mensagem pelo WhatsApp. Não é necessário explicar toda a sua situação nesse momento.
+Tire suas dúvidas e agende seu horário pelo WhatsApp.
 
-#### 2. Informações e disponibilidade
+#### 2. Agendamos sua sessão
 
-Você recebe as informações práticas do atendimento e pode esclarecer dúvidas sobre horários, modalidade e honorários.
+Escolha o melhor dia e horário, de forma prática e rápida.
 
-#### 3. Definição da modalidade
+#### 3. Nos encontramos (online ou presencial)
 
-O atendimento pode ser realizado online ou presencialmente em São Paulo. A modalidade é alinhada antes do agendamento.
+Um espaço seguro para você falar e ser ouvida.
 
-#### 4. Agendamento
+#### 4. Seguimos juntos
 
-Se desejar prosseguir, a sessão é marcada conforme a disponibilidade informada.
+Um acompanhamento contínuo, no seu ritmo, com foco no que realmente importa para você.
+
+### Modalidades de atendimento
+
+## Terapia do seu jeito, onde você estiver
+
+Você pode optar pelo atendimento presencial, em um espaço acolhedor e confortável, ou pela modalidade online, com a mesma qualidade, sigilo e acolhimento.
 
 ### Modalidade online
 
 #### Atendimento online
 
-As sessões são realizadas por videochamada, permitindo o acompanhamento a partir de um local reservado e com acesso à internet.
-
-[Confirmar a plataforma utilizada, os requisitos do atendimento e o alcance geográfico permitido antes da publicação.]
+Com a mesma qualidade e acolhimento, no conforto da sua casa.
 
 ### Modalidade presencial
 
 #### Atendimento presencial
 
-Os encontros presenciais acontecem em São Paulo — SP.
+Um espaço pensado para o seu bem-estar, com privacidade e conforto.
 
-[Inserir bairro, região ou endereço conforme a informação que a profissional decidir divulgar.]
+### Faixa final — conteúdo demonstrativo
+
+> “A terapia me ajudou a olhar para mim com mais leveza e a encontrar caminhos que fazem sentido. Hoje me sinto mais segura e em paz com as minhas escolhas.”
+
+— Paciente (nome preservado)
+
+Este relato é conteúdo demonstrativo e deve ser substituído por um depoimento real, autorizado e validado antes da publicação profissional.
+
+**Cuidar da sua saúde mental também é uma forma de avançar.**
 
 ### Informações práticas
 
@@ -257,7 +269,7 @@ Os encontros presenciais acontecem em São Paulo — SP.
 
 ### CTA da seção
 
-**Solicitar agendamento**
+**Conversar pelo WhatsApp**
 
 ### Microcopy do CTA
 
