@@ -1139,6 +1139,11 @@
     font-size: clamp(2.375rem, 11vw, 3rem);
   }
 
+  .modalities {
+    display: grid;
+    gap: var(--space-4);
+  }
+
   .modalities article {
     min-height: 0;
     grid-template-columns: 1fr;
