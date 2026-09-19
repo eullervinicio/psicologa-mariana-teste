@@ -549,23 +549,24 @@
   display: grid;
   margin-top: var(--space-5);
   grid-column: 2;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
   gap: var(--space-4);
 }
 
 .modalities article {
   display: grid;
-  min-height: 10.5rem;
+  min-height: 18.5rem;
   overflow: hidden;
   border-radius: var(--radius-medium);
   color: var(--color-text);
   background: var(--color-background-base);
-  grid-template-columns: minmax(0, 1fr) minmax(13rem, 1fr);
+  grid-template-rows: 8.5rem 1fr;
 }
 
 .modalityImage {
   position: relative;
-  min-height: 10.5rem;
+  min-height: 8.5rem;
 }
 
 .modalityImage img {
@@ -575,7 +576,7 @@
 .modalityContent {
   display: grid;
   align-content: center;
-  padding: clamp(1.5rem, 2.5vw, 2.25rem);
+  padding: var(--space-5);
 }
 
 .modalityContent h3 {
@@ -886,6 +887,16 @@
     grid-template-columns: 1fr;
   }
 
+  .modalities article {
+    min-height: 15rem;
+    grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.8fr);
+    grid-template-rows: none;
+  }
+
+  .modalityImage {
+    min-height: 15rem;
+  }
+
   .processClosingLayout {
     grid-template-columns: auto minmax(0, 1fr) minmax(12rem, 0.45fr);
   }
@@ -900,6 +911,31 @@
 }
 
 @media (min-width: 64rem) and (max-width: 74.9375rem) {
+  .processWideContainer {
+    display: block;
+  }
+
+  .modalitiesHeader {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .modalities {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .modalities article {
+    min-height: 15rem;
+    grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.8fr);
+    grid-template-rows: none;
+  }
+
+  .modalityImage {
+    min-height: 15rem;
+  }
+
   .approachLayout {
     grid-template-columns: 1fr;
     gap: var(--space-8);
