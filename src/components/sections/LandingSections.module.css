@@ -244,11 +244,6 @@
     max-width: 24ch;
     font-size: clamp(2.125rem, 3.5vw, 2.75rem);
   }
-
-  .steps li > div {
-    display: grid;
-    grid-template-rows: minmax(3.75rem, auto) auto;
-  }
 }
 
 .about {
