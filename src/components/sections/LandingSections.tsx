@@ -305,18 +305,6 @@ export function ProcessSection() {
         </Container>
       </div>
 
-      <div className={styles.processClosing}>
-        <Container className={styles.processClosingLayout}>
-          <span className={styles.quoteMark} aria-hidden="true">“</span>
-          {/* Conteúdo demonstrativo fornecido pelo cliente; substituir por relato autorizado antes da publicação real. */}
-          <blockquote>
-            <p>“{processContent.testimonial}”</p>
-            <cite>— {processContent.testimonialAttribution}</cite>
-          </blockquote>
-          <Image className={styles.processPlant} src={aboutPlantImage} alt="" sizes="(max-width: 767px) 12rem, 20rem" />
-          <p className={styles.closingStatement}>{processContent.closingStatement}</p>
-        </Container>
-      </div>
     </section>
   );
 }
