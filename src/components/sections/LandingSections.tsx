@@ -290,7 +290,7 @@ export function ProcessSection() {
                     src={modality.image}
                     alt={modality.imageAlt}
                     fill
-                    sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1199px) calc(100vw - 64px), 11vw"
+                    sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1199px) calc(100vw - 64px), 22vw"
                   />
                 </div>
                 <div className={styles.modalityContent}>
