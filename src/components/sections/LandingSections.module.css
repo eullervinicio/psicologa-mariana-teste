@@ -261,9 +261,21 @@
 .aboutGrid {
   display: grid;
   position: relative;
+  z-index: 1;
   align-items: stretch;
   grid-template-columns: minmax(18rem, 5fr) minmax(0, 7fr);
   gap: clamp(3rem, 8vw, 8rem);
+}
+
+.aboutPlant {
+  position: absolute;
+  z-index: 0;
+  right: -2.5rem;
+  bottom: -3rem;
+  width: clamp(16rem, 22vw, 22rem);
+  height: auto;
+  pointer-events: none;
+  user-select: none;
 }
 
 .aboutPortrait {
@@ -793,6 +805,13 @@
     inset: -4% -2% -4% -4%;
     width: 106%;
     height: 108%;
+    opacity: 0.72;
+  }
+
+  .aboutPlant {
+    right: -5rem;
+    bottom: -2rem;
+    width: 13rem;
     opacity: 0.72;
   }
 
