@@ -1141,6 +1141,7 @@
 
   .modalities {
     display: grid;
+    margin-top: var(--space-5);
     gap: var(--space-4);
   }
 
