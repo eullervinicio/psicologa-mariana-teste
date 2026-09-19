@@ -324,8 +324,8 @@ export function FaqSection() {
         </div>
 
         <div className={styles.faqList}>
-          {faqContent.items.map((item, index) => (
-            <details key={item.question} open={index === 0}>
+          {faqContent.items.map((item) => (
+            <details key={item.question} name="faq">
               <summary>
                 <span>{item.question}</span>
                 <span className={styles.faqMarker} aria-hidden="true" />
