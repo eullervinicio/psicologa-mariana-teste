@@ -13,7 +13,6 @@ import { ContactForm } from "@/components/contact/ContactForm";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
 import aboutImage from "@/assets/images/mariana-sobre.webp";
-import aboutPlantImage from "@/assets/images/planta-decorativa.png";
 import signatureImage from "@/assets/images/assinatura-mariana-alves.png";
 import {
   aboutContent,
@@ -136,15 +135,18 @@ export function NeedsSection() {
 export function AboutSection() {
   return (
     <section id="sobre" className={styles.about} aria-labelledby="about-title">
-      <Image
-        className={styles.aboutPlant}
-        src={aboutPlantImage}
-        alt=""
-        sizes="(max-width: 767px) 13rem, (max-width: 1279px) 16rem, 22rem"
-        loading="lazy"
-      />
       <Container className={styles.aboutGrid}>
         <figure className={styles.aboutPortrait}>
+          <svg
+            className={styles.aboutFrameLines}
+            aria-hidden="true"
+            focusable="false"
+            viewBox="0 0 100 125"
+            preserveAspectRatio="none"
+          >
+            <path className={styles.aboutFrameLineGold} d="M32 2C2 0-8 21 3 48s8 43-12 52" />
+            <path className={styles.aboutFrameLineOlive} d="M109 30C83 37 83 57 96 72s14 37-13 53" />
+          </svg>
           <Image
             className={styles.aboutImage}
             src={aboutImage}

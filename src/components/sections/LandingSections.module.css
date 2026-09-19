@@ -261,33 +261,64 @@
 .aboutGrid {
   display: grid;
   position: relative;
-  z-index: 1;
   align-items: stretch;
   grid-template-columns: minmax(18rem, 5fr) minmax(0, 7fr);
   gap: clamp(3rem, 8vw, 8rem);
 }
 
-.aboutPlant {
-  position: absolute;
-  z-index: 0;
-  right: -2.5rem;
-  bottom: -3rem;
-  width: clamp(16rem, 22vw, 22rem);
-  height: auto;
-  pointer-events: none;
-  user-select: none;
-}
-
 .aboutPortrait {
   position: relative;
+  isolation: isolate;
+  min-width: 0;
   aspect-ratio: 4 / 5;
-  overflow: hidden;
   margin: 0;
   background: var(--color-primary-100);
 }
 
+.aboutPortrait::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  border-radius: 1.5rem;
+  background: rgb(177 146 111 / 7%);
+  content: "";
+  transform: translate(1.25rem, 1.25rem);
+}
+
 .aboutImage {
+  z-index: 2;
+  border: 1px solid rgb(160 120 85 / 25%);
+  border-radius: 1.5rem;
+  box-shadow:
+    0 30px 70px rgb(55 40 30 / 12%),
+    0 8px 24px rgb(55 40 30 / 6%);
   object-position: 50% 38%;
+}
+
+.aboutFrameLines {
+  position: absolute;
+  z-index: 1;
+  inset: -12% -4% -12% -12%;
+  width: 116%;
+  height: 124%;
+  overflow: hidden;
+  fill: none;
+  pointer-events: none;
+}
+
+.aboutFrameLineGold,
+.aboutFrameLineOlive {
+  vector-effect: non-scaling-stroke;
+  stroke-linecap: round;
+  stroke-width: 1.25;
+}
+
+.aboutFrameLineGold {
+  stroke: rgb(166 126 88 / 55%);
+}
+
+.aboutFrameLineOlive {
+  stroke: rgb(84 103 74 / 45%);
 }
 
 .aboutContent {
@@ -629,6 +660,17 @@
     gap: var(--space-8);
   }
 
+  .aboutFrameLines {
+    inset: -8% -3% -8% -8%;
+    width: 111%;
+    height: 116%;
+  }
+
+  .aboutPortrait {
+    width: 100%;
+    align-self: start;
+  }
+
   .steps {
     grid-template-columns: 1fr 1fr;
   }
@@ -743,10 +785,14 @@
     min-height: 0;
   }
 
-  .aboutPlant {
-    right: -5rem;
-    bottom: -2rem;
-    width: 13rem;
+  .aboutPortrait::before {
+    transform: translate(0.75rem, 0.75rem);
+  }
+
+  .aboutFrameLines {
+    inset: -4% -2% -4% -4%;
+    width: 106%;
+    height: 108%;
     opacity: 0.72;
   }
 
