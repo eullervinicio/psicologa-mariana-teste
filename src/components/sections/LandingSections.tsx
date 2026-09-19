@@ -145,16 +145,6 @@ export function AboutSection() {
       />
       <Container className={styles.aboutGrid}>
         <figure className={styles.aboutPortrait}>
-          <svg
-            className={styles.aboutFrameLines}
-            aria-hidden="true"
-            focusable="false"
-            viewBox="0 0 100 125"
-            preserveAspectRatio="none"
-          >
-            <path className={styles.aboutFrameLineGold} d="M32 2C2 0-8 21 3 48s8 43-12 52" />
-            <path className={styles.aboutFrameLineOlive} d="M109 30C83 37 83 57 96 72s14 37-13 53" />
-          </svg>
           <Image
             className={styles.aboutImage}
             src={aboutImage}

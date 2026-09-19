@@ -280,57 +280,19 @@
 
 .aboutPortrait {
   position: relative;
-  isolation: isolate;
   min-width: 0;
   aspect-ratio: 4 / 5;
+  overflow: hidden;
   margin: 0;
+  border-radius: 1.25rem;
   background: var(--color-primary-100);
-}
-
-.aboutPortrait::before {
-  position: absolute;
-  z-index: 0;
-  inset: 0;
-  border-radius: 1.5rem;
-  background: rgb(177 146 111 / 7%);
-  content: "";
-  transform: translate(1.25rem, 1.25rem);
+  box-shadow:
+    0 18px 45px rgb(44 35 28 / 10%),
+    0 4px 14px rgb(44 35 28 / 5%);
 }
 
 .aboutImage {
-  z-index: 2;
-  border: 1px solid rgb(160 120 85 / 25%);
-  border-radius: 1.5rem;
-  box-shadow:
-    0 30px 70px rgb(55 40 30 / 12%),
-    0 8px 24px rgb(55 40 30 / 6%);
   object-position: 50% 38%;
-}
-
-.aboutFrameLines {
-  position: absolute;
-  z-index: 1;
-  inset: -12% -4% -12% -12%;
-  width: 116%;
-  height: 124%;
-  overflow: hidden;
-  fill: none;
-  pointer-events: none;
-}
-
-.aboutFrameLineGold,
-.aboutFrameLineOlive {
-  vector-effect: non-scaling-stroke;
-  stroke-linecap: round;
-  stroke-width: 1.25;
-}
-
-.aboutFrameLineGold {
-  stroke: rgb(166 126 88 / 55%);
-}
-
-.aboutFrameLineOlive {
-  stroke: rgb(84 103 74 / 45%);
 }
 
 .aboutContent {
@@ -672,12 +634,6 @@
     gap: var(--space-8);
   }
 
-  .aboutFrameLines {
-    inset: -8% -3% -8% -8%;
-    width: 111%;
-    height: 116%;
-  }
-
   .aboutPortrait {
     width: 100%;
     align-self: start;
@@ -795,17 +751,6 @@
   .aboutPortrait {
     aspect-ratio: 4 / 5;
     min-height: 0;
-  }
-
-  .aboutPortrait::before {
-    transform: translate(0.75rem, 0.75rem);
-  }
-
-  .aboutFrameLines {
-    inset: -4% -2% -4% -4%;
-    width: 106%;
-    height: 108%;
-    opacity: 0.72;
   }
 
   .aboutPlant {
